@@ -1,0 +1,106 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+	<view class="header">
+		<view class="header_info">
+			<image class="headimg" src="/images/headimg.png"></image>
+			<view>
+				<view class="name">大灰杨123</view>
+				<view class="btn">
+					<view class="btn1">
+						<navigator url="/pages/vip_rights/vip_rights">战卡特权
+						</navigator>
+					</view>
+					<view class="btn1">服务保障</view>
+					<view class="btn2" bindtap="open_card">开通战卡</view>
+				</view>
+			</view>
+			<image class="ewm" src="/images/ewm.png"></image>
+		</view>
+		<view class="header_bottom">
+			<view class="header_bottom_li">
+				<view class="label">优惠券</view>
+				<view class="num">5</view>
+			</view>
+			<view class="header_bottom_li">
+				<view class="label">卡路币</view>
+				<view class="num">5</view>
+			</view>
+			<view class="header_bottom_li">
+				<view class="label">
+					<navigator url="/pages/msg/msg">
+						消息
+					</navigator>
+				</view>
+				<view class="num">5</view>
+			</view>
+		</view>
+	</view>
+	<swiper class="swiper-block" indicatorDots='true' indicator-color='#666' indicator-active-color='white' duration='1000' previous-margin="90rpx" next-margin="90rpx" current="1" bindchange="swiperChange">
+		<block wx:for="{{imgUrls}}" wx:index="{{index}}">
+			<swiper-item class="swiper-item">
+				<image mode="aspectFill" src="{{item}}" class="bj {{swiperIndex == index ? 'active' : ''}}" />
+				<view class="mask {{swiperIndex == index ? 'active' : ''}}">
+					<view class="title">黄金会员</view>
+					<image class="hy" src="/images/hjhy.png"></image>
+					<view class="score">战分达3000分</view>
+					<view class="tips">您将获得如下权益</view>
+					<view class="rights">
+						<view class="rights_li">
+							<image src="/images/zf.png"></image>
+							<view>战分+30</view>
+						</view>
+						<view class="rights_li">
+							<image src="/images/yhq.png"></image>
+							<view>优惠券¥30</view>
+						</view>
+						<view class="rights_li">
+							<image src="/images/klb.png"></image>
+							<view>卡路币+30</view>
+						</view>
+					</view>
+				</view>
+			</swiper-item>
+		</block>
+	</swiper>
+
+	<view class="list">
+		<view class="list_li">
+			<view>
+				<navigator url="/pages/my_jiaolian/my_jiaolian">
+					我关注的教练
+				</navigator>
+			</view>
+			<image class="more" src="/images/more.png"></image>
+		</view>
+
+		<view class="list_li">
+			<view>卡路币商城</view>
+			<image class="more" src="/images/more.png"></image>
+		</view>
+		<view class="list_li">
+			<view>邀请福利</view>
+			<image class="more" src="/images/more.png"></image>
+		</view>
+		<view class="list_li">
+			<view>消费明细</view>
+			<image class="more" src="/images/more.png"></image>
+		</view>
+		<navigator url="/pages/chat/chat">
+			<view class="list_li">
+				<view>联系客服</view>
+				<image class="more" src="/images/more.png"></image>
+			</view>
+		</navigator>
+		<view class="list_li">
+			<view>线下会员登记</view>
+			<image class="more" src="/images/more.png"></image>
+		</view>
+	</view>
+	<view class="layer_ct" wx:if="{{openCard}}">
+		<image src="/images/bak.png" class="bak"></image>
+		<view class="title">充值成为年卡会员</view>
+		<view class="czBtn">充值激活会员身份</view>
+		<image class="close" src="/images/close.png" bindtap="close_card"></image>
+	</view>
+	<view class="layer" wx:if="{{showLayer}}" bindtap="close_layer" />
+</view>

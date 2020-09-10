@@ -1,0 +1,203 @@
+/* pages/Appointment_details/Appointment_details.wxss */
+.container {
+  padding-bottom: 120rpx;
+}
+
+.list_head {
+  padding: 25rpx 0 25rpx 60rpx;
+  border-top: 2rpx solid rgba(112, 112, 112, 1);
+  background: rgba(59, 59, 59, 1);
+}
+
+.list_head .name {
+  font-size: 44rpx;
+  color: rgba(239, 204, 89, 1);
+  margin-bottom: 14rpx;
+}
+
+.list_head .address {
+  font-size: 24rpx;
+  color: rgba(7, 173, 236, 1);
+}
+
+.list_li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25rpx 30rpx 25rpx;
+  color: #fff;
+  font-size: 24rpx;
+  border-top: 2rpx solid rgba(112, 112, 112, 1);
+  background: rgba(59, 59, 59, 1);
+}
+
+.list_li:nth-child(6) {
+  border-bottom: 2rpx solid rgba(112, 112, 112, 1);
+  margin-bottom: 48rpx;
+}
+
+.list_li .left {
+  display: flex;
+  align-items: center;
+}
+
+.list_li .left image {
+  width: 14rpx;
+  height: 14rpx;
+  margin-right: 10rpx;
+}
+
+.list_li .left .price {
+  font-size: 32rpx;
+  color: rgba(220, 50, 74, 1);
+}
+
+.list_li .noCoupon {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.list_li picker {
+  position: relative;
+}
+
+.list_li picker .picker {
+  width: 160rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  border: 2rpx solid rgba(239, 204, 89, 1);
+  border-radius: 100rpx;
+  text-align: center;
+  padding-right: 15rpx;
+  box-sizing: border-box;
+}
+
+.list_li .left picker .icon {
+  width: 16rpx;
+  height: 10rpx;
+  position: absolute;
+  right: 16rpx;
+  top: 50%;
+  margin-top: -2rpx;
+}
+
+.list_li .left .line {
+  background: rgba(112, 112, 112, 1);
+  margin: 0 10rpx;
+  width: 14rpx;
+  height: 2rpx;
+}
+
+.seat_tips {
+  text-align: center;
+  padding: 20rpx 0;
+  color: rgba(239, 204, 89, 1);
+  font-size: 30rpx;
+}
+
+.seat_ct {
+  padding-bottom: 48rpx;
+  border-top: 2rpx solid rgba(112, 112, 112, 1);
+  border-bottom: 2rpx solid rgba(112, 112, 112, 1);
+  background: rgba(59, 59, 59, 1);
+}
+
+.seat_ct .head {
+  margin: 0 auto 50rpx;
+  width: 381rpx;
+  text-align: center;
+  position: relative;
+  border-width: 50rpx 50rpx 0;
+  border-style: solid;
+  border-color: #fff transparent;
+}
+
+.seat_ct .head_inner {
+  text-align: center;
+  width: 381rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  position: absolute;
+  left: 0;
+  top: -50rpx;
+  color: rgba(220, 50, 74, 1);
+  font-size: 30rpx;
+}
+
+.seat_ct .options {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10rpx;
+}
+
+.seat_ct .options_li {
+  width: 80rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border: 2rpx solid rgba(112, 112, 112, 1);
+  border-radius: 16rpx;
+  margin: 0 20rpx 14rpx;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 30rpx;
+}
+
+.seat_ct .state1 {
+  background: rgba(220, 50, 74, 1);
+  border: none !important;
+}
+
+.seat_ct .state2 {
+  background: rgba(80, 182, 116, 1);
+  border: none !important;
+}
+
+.marks, .marks_li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marks_li {
+  color: #fff;
+  font-size: 24rpx;
+  margin: 50rpx 26rpx 0;
+}
+
+.marks_li .box {
+  width: 80rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border: 2rpx solid rgba(112, 112, 112, 1);
+  border-radius: 16rpx;
+  margin-right: 10rpx;
+  box-sizing: border-box;
+}
+
+.section {
+  padding: 20rpx;
+  margin: 48rpx 0;
+  border-top: 2rpx solid rgba(112, 112, 112, 1);
+  border-bottom: 2rpx solid rgba(112, 112, 112, 1);
+  background: rgba(59, 59, 59, 1);
+}
+
+.section_title {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 24rpx;
+}
+
+.section_title image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 5rpx;
+}
+
+.section_ct {
+  padding: 20rpx 30rpx;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 24rpx;
+}

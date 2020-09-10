@@ -1,0 +1,41 @@
+    <view class="seat">
+      <view class="seat_ct">
+        <view class="head">
+          <view class="head_inner">讲台</view>
+        </view>
+        <view class="options">
+          <view class="options_li state1">1A</view>
+          <view class="options_li">1B</view>
+          <view class="options_li">1C</view>
+          <view class="options_li state2">1D</view>
+          <view class="options_li">1E</view>
+          <view class="options_li">1F</view>
+          <view class="options_li">2A</view>
+          <view class="options_li">2B</view>
+          <view class="options_li">2C</view>
+          <view class="options_li">2D</view>
+          <view class="options_li">2E</view>
+          <view class="options_li">2F</view>
+          <view class="options_li">3A</view>
+          <view class="options_li">3B</view>
+          <view class="options_li">3C</view>
+          <view class="options_li">3D</view>
+          <view class="options_li">3E</view>
+          <view class="options_li">3F</view>
+        </view>
+        <view class="marks">
+          <view class="marks_li">
+            <view class="box"></view>
+            <view>可选</view>
+          </view>
+          <view class="marks_li">
+            <view class="box state1"></view>
+            <view>不可选</view>
+          </view>
+          <view class="marks_li">
+            <view class="box state2"></view>
+            <view>已选择</view>
+          </view>
+        </view>
+      </view>
+    </view>

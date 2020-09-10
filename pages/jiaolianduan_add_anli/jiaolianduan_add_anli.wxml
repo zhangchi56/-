@@ -1,0 +1,14 @@
+<!--pages/jiaolianduan_add_anli/jiaolianduan_add_anli.wxml-->
+<view class="container">
+  <view class="list">
+      <view class="addBtn">
+        <image src="/images/add.png"></image>
+        <view>展示精选照片</view>
+      </view>
+      <image class="img" src="/images/al.png"></image>
+       <image class="img" src="/images/al.png"></image>
+        <image class="img" src="/images/al.png"></image>
+  </view>
+  <textarea class="inp" placeholder="这一刻的文字说明"></textarea>
+  <view class="btn">确定上传</view>
+</view>

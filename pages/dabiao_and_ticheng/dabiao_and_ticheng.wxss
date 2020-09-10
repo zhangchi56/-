@@ -1,0 +1,139 @@
+/* pages/dabiao_and_ticheng/dabiao_and_ticheng.wxss */
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16rpx 30rpx;
+  font-size: 32rpx;
+  color: rgba(7, 173, 236, 1);
+  background: rgba(59, 59, 59, 1);
+}
+
+.head picker {
+  position: relative;
+}
+
+.head picker .picker {
+  color: #fff;
+  font-size: 32rpx;
+  padding-right: 40rpx;
+}
+
+.head picker .icon {
+  width: 16rpx;
+  height: 10rpx;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -2rpx;
+}
+
+.head .changeBtn {
+  text-align: center;
+  width: 150rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  background: rgba(7, 173, 236, 1);
+  border-radius: 10rpx;
+}
+
+.table {
+  background: rgba(147, 144, 148, 1);
+  color: rgba(220, 50, 74, 1);
+  font-size: 24rpx;
+  margin-bottom: 40rpx;
+}
+
+.table .table_tr {
+  display: flex;
+  text-align: center;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.table .td,.table .th {
+  border: 2rpx solid rgba(112, 112, 112, 0.5);
+}
+.table .th .label {
+  line-height: 30rpx;
+}
+.table .th .percentage {
+  line-height: 30rpx;
+  color:#fff;
+}
+.table .table_tr .th:nth-child(1) {
+  width: 170rpx;
+  background: rgba(220, 50, 74, 1);
+  font-size: 28rpx;
+  color:#fff;
+  border-bottom: 0;
+}
+.table .table_tr .th:nth-child(2) {
+  width: 150rpx;
+}
+
+.table .table_tr .th:nth-child(3) {
+  width: 140rpx;
+}
+
+.table .table_tr .th:nth-child(4) {
+  width: 140rpx;
+}
+.table .table_tr .th:nth-child(5) {
+  width: 140rpx;
+}
+
+.table .table_tr .td:nth-child(1) {
+  width: 170rpx;
+  background: rgba(220, 50, 74, 1);
+  font-size: 28rpx;
+  color:#fff;
+  border-top: 0;
+}
+.table .table_tr .td:nth-child(2) {
+  width: 150rpx;
+}
+
+.table .table_tr .td:nth-child(3) {
+  width: 140rpx;
+}
+
+.table .table_tr .td:nth-child(4) {
+  width: 140rpx;
+}
+.table .table_tr .td:nth-child(5) {
+  width: 140rpx;
+}
+.table .table_tr .yellow {
+  background: rgba(239, 204, 89, 1);
+}
+.table .table_tr .td.yellow {
+  background: rgba(239, 204, 89, 1);
+  color:#fff;
+}
+.section{
+  padding: 30rpx 20rpx 20rpx;
+  background:rgba(59,59,59,1);
+border-top:2rpx solid rgba(112,112,112,0.5);
+border-bottom:2rpx solid rgba(112,112,112,0.5);
+margin-bottom: 32rpx;
+}
+.section_li .title{
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  color:#fff;
+  margin:5rpx 0;
+  margin-bottom: 30rpx;
+}
+
+.section_li .title image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 8rpx;
+}
+.section_li .ct{
+  color:rgba(255,255,255,0.5);
+  font-size: 24rpx;
+  padding: 0 10rpx;
+}

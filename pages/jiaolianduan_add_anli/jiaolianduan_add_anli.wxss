@@ -1,0 +1,53 @@
+/* pages/jiaolianduan_add_anli/jiaolianduan_add_anli.wxss */
+.container{
+  padding-bottom: 150rpx;
+}
+.list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.list .addBtn{
+  box-sizing: border-box;
+  width:294rpx;
+height:222rpx;
+background:rgba(255,255,255,0.5);
+border-radius:10rpx;
+text-align: center;
+color:#fff;
+font-size: 20rpx;
+margin-left: 50rpx;
+margin-bottom: 20rpx;
+}
+.list .addBtn image{
+  width: 45rpx;
+  height: 45rpx;
+  margin: 70rpx auto 32rpx;
+  margin-bottom: 20rpx;
+}
+
+.list image{
+  width:294rpx;
+height:222rpx;
+margin-left:50rpx;
+border-radius:10rpx;
+}
+.inp{
+  width: 660rpx;
+  height: 200rpx;
+  margin: 30rpx auto 0;
+  font-size: 24rpx;
+  color:#fff;
+  padding:20rpx;
+}
+.btn{
+  width:608rpx;
+height:100rpx;
+line-height: 100rpx;
+text-align: center;
+background:rgba(220,50,74,1);
+box-shadow:0px -4rpx 8rpx rgba(0,0,0,0.16);
+border-radius:20rpx;
+font-size: 32rpx;
+color:#fff;
+margin: 100rpx auto 0;
+}

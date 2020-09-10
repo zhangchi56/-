@@ -1,0 +1,408 @@
+<!--pages/jiaolianduan/jiaolianduan.wxml-->
+<view class="container">
+
+  <view class="list" wx:if="{{id==0}}">
+    <view class="section">
+      <view class="calendar">
+        <view class="calendar_li calendar_active">
+          <view class="date">今天</view>
+          <view class="week">三</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.11</view>
+          <view class="week">四</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.12</view>
+          <view class="week">五</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.13</view>
+          <view class="week">六</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.14</view>
+          <view class="week">日</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.15</view>
+          <view class="week">一</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.16</view>
+          <view class="week">二</view>
+        </view>
+      </view>
+    </view>
+    <view class="gym">
+      <view class="gym_head">
+        <view class="shop">合肥金克斯</view>
+      </view>
+      <view class="li">
+        <view class="li_left">
+          <view class="name">燃脂普拉提</view>
+          <view class="t2">08:40-12:00 / 预约人数：
+            <text class="num">32/100</text>
+          </view>
+          <view class="t3">教室：302
+            <navigator url="/pages/jiaolianduan_chawei/jiaolianduan_chawei">
+              <text class="seeSeat">查看选位</text>
+            </navigator>
+          </view>
+        </view>
+        <view class="li_right">
+          <view class="btn btn1">已确认</view>
+          <view class="btn btn2">申请取消</view>
+        </view>
+      </view>
+      <view class="li">
+        <view class="li_left">
+          <view class="name">燃脂普拉提</view>
+          <view class="t2">08:40-12:00 / 预约人数：
+            <text class="num">32/100</text>
+          </view>
+          <view class="t3">教室：302
+            <text class="seeSeat">查看选位</text>
+          </view>
+        </view>
+        <view class="li_right">
+          <view class="btn btn1 unconfirmed">未确认</view>
+          <view class="btn btn2">申请取消</view>
+        </view>
+      </view>
+    </view>
+  </view>
+      <!-- <view class="page-group {{scrollTop > 360 ? 'page-group-position' : ''}}">
+        <view class="page-nav-list">
+         <navigator url="/pages/jiaolianduan_chawei/jiaolianduan_chawei">
+          <text>新增排课</text>
+          </navigator>
+        </view>
+      </view> -->
+  <view class="list" wx:if="{{id==1}}">
+    <view class="section">
+      <view class="calendar">
+        <view class="calendar_li calendar_active">
+          <view class="date">今天</view>
+          <view class="week">三</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.11</view>
+          <view class="week">四</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.12</view>
+          <view class="week">五</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.13</view>
+          <view class="week">六</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.14</view>
+          <view class="week">日</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.15</view>
+          <view class="week">一</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.16</view>
+          <view class="week">二</view>
+        </view>
+      </view>
+    </view>
+    <view class="gym">
+      <view class="gym_head">
+        <view class="shop">合肥金克斯</view>
+      </view>
+      <view class="li">
+        <view class="li_left">
+          <view class="name">燃脂普拉提</view>
+          <view class="t2">08:40-12:00 / 预约人数：
+            <text class="num">32/100</text>
+          </view>
+          <view class="t3">教室：302
+            <text class="seeSeat">查看选位</text>
+          </view>
+        </view>
+        <view class="li_right">
+          <view class="btn btn1">已确认</view>
+          <view class="btn btn2">申请取消</view>
+        </view>
+      </view>
+      <view class="li">
+        <view class="li_left">
+          <view class="name">燃脂普拉提</view>
+          <view class="t2">08:40-12:00 / 预约人数：
+            <text class="num">32/100</text>
+          </view>
+          <view class="t3">教室：302
+            <text class="seeSeat">查看选位</text>
+          </view>
+        </view>
+        <view class="li_right">
+          <view class="btn btn1 unconfirmed">未确认</view>
+          <view class="btn btn2">申请取消</view>
+        </view>
+      </view>
+
+    </view>
+    <view class="gym">
+      <view class="gym_head">
+        <view class="shop">合肥金克斯</view>
+      </view>
+      <view class="li">
+        <view class="li_left">
+          <view class="name">燃脂普拉提</view>
+          <view class="t2">08:40-12:00 / 预约人数：
+            <text class="num">32/100</text>
+          </view>
+          <view class="t3">教室：302
+            <text class="seeSeat">查看选位</text>
+          </view>
+        </view>
+        <view class="li_right">
+          <view class="btn btn1">已确认</view>
+          <view class="btn btn2">申请取消</view>
+        </view>
+      </view>
+      <view class="li">
+        <view class="li_left">
+          <view class="name">燃脂普拉提</view>
+          <view class="t2">08:40-12:00 / 预约人数：
+            <text class="num">32/100</text>
+          </view>
+          <view class="t3">教室：302
+            <text class="seeSeat">查看选位</text>
+          </view>
+        </view>
+        <view class="li_right">
+          <view class="btn btn1 unconfirmed">未确认</view>
+          <view class="btn btn2">申请取消</view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <view class="list" wx:if="{{id==2}}">
+    <view class="section">
+      <view class="section_row1">
+        <view class="tab">
+          <view class="tab_li {{tabId=='A'?'active':''}}" data-select="A" bindtap="selectTab">空闲时段</view>
+          <view class="tab_li {{tabId=='B'?'active':''}}" data-select="B" bindtap="selectTab">约课情况</view>
+        </view>
+      </view>
+      <view class="calendar">
+        <view class="calendar_li calendar_active">
+          <view class="date">今天</view>
+          <view class="week">三</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.11</view>
+          <view class="week">四</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.12</view>
+          <view class="week">五</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.13</view>
+          <view class="week">六</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.14</view>
+          <view class="week">日</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.15</view>
+          <view class="week">一</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.16</view>
+          <view class="week">二</view>
+        </view>
+      </view>
+    </view>
+    <view class="content" wx:if="{{tabId=='A'}}">
+      <view class="store">
+        <view></view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            {{array[index]}}
+          </view>
+          <image class="icon" src="/images/sjx.png"></image>
+        </picker>
+      </view>
+      <view class="free">
+        <view class="free_ct">
+          <view class="free_ct_li">
+            <view class="time">0:00-0:30</view>
+            <view class="status status1">
+              <image src="/images/cha.png"></image>
+            </view>
+          </view>
+          <view class="free_ct_li">
+            <view class="time">0:30-1:00</view>
+            <view class="status status2">
+              <image src="/images/dui.png"></image>
+            </view>
+          </view>
+          <view class="free_ct_li">
+            <view class="time">0:00-0:30</view>
+            <view class="status status1">
+              <image src="/images/cha.png"></image>
+            </view>
+          </view>
+          <view class="free_ct_li">
+            <view class="time">0:30-1:00</view>
+            <view class="status status2">
+              <image src="/images/dui.png"></image>
+            </view>
+          </view>
+          
+          <view class="free_ct_li">
+            <view class="time">1:00-1:30</view>
+            <view class="status status1">
+              <image src="/images/cha.png"></image>
+            </view>
+          </view>
+          <view class="free_ct_li">
+            <view class="time">2:00-2:30</view>
+            <view class="status status3">
+              <navigator url="/pages/Appointment_details/Appointment_details">
+     被预约
+  </navigator>
+            </view>
+          </view>
+        </view>
+      </view>
+      
+    </view>
+    <view class="content" wx:if="{{tabId=='B'}}">
+      <view class="store">
+        <view></view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            {{array[index]}}
+          </view>
+          <image class="icon" src="/images/sjx.png"></image>
+        </picker>
+      </view>
+      <view class="li li2">
+        <view class="li_left">
+          <image src="/images/headimg.png"></image>
+          <view>
+            <view class="name">一只大灰杨</view>
+            <view class="time">08:40-12:00 </view>
+          </view>
+        </view>
+        <view class="li_right">
+          <view class="btn btn1">更换时间</view>
+          <view class="btn btn2">申请取消</view>
+        </view>
+      </view>
+      <view class="li li2">
+        <view class="li_left">
+          <image src="/images/headimg.png"></image>
+          <view>
+            <view class="name">一只大灰杨</view>
+            <view class="time">08:40-12:00 </view>
+          </view>
+        </view>
+        <view class="li_right">
+          <view class="btn btn1">更换时间</view>
+          <view class="btn btn2">申请取消</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="my" wx:if="{{id==3}}">
+    <view class="header">
+      <view class="header_info">
+        <image class="headimg" src="/images/headimg.png"></image>
+        <view>
+          <view class="name">大灰杨123</view>
+          <view class="grade">普通教练</view>
+        </view>
+      </view>
+      <view class="msg">
+        <view><navigator url="/pages/msg/msg">
+     消息
+  </navigator></view>
+        <image src="/images/msg.png"></image>
+      </view>
+    </view>
+    <view class="row">
+      <view class="row_li">
+        <view><navigator url="/pages/dabiao_and_ticheng/dabiao_and_ticheng">
+     达标情况与提成比例
+  </navigator></view>
+        <image class="more" src="/images/more.png"></image>
+      </view>
+      <view class="row_li">
+        <view><navigator url="/pages/jiaolianduan_jiesuan/jiaolianduan_jiesuan">
+     教练端结算
+  </navigator></view>
+        <image class="more" src="/images/more.png"></image>
+      </view>
+      <view class="row_li">
+        <view><navigator url="/pages/jiaolianduan_zhengshu/jiaolianduan_zhengshu">
+     教练端证书
+  </navigator></view>
+        <image class="more" src="/images/more.png"></image>
+      </view>
+      <view class="row_li">
+        <view><navigator url="/pages/jiaolianduan_anli/jiaolianduan_anli">
+     教练端案例
+  </navigator></view>
+        <image class="more" src="/images/more.png"></image>
+      </view>
+      <view class="row_li">
+        <view><navigator url="/pages/coach_wall/coach_wall">
+     照片更新
+  </navigator></view>
+        <image class="more" src="/images/more.png"></image>
+      </view>
+      <view class="row_li">
+        <view><navigator url="/pages/chat/chat">
+     联系客服
+  </navigator></view>
+        <image class="more" src="/images/more.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="nav">
+    <view class="nav_tab {{index==id?'active':''}}" wx:for="{{nav}}" wx:key="" data-index="{{index}}" bindtap="selectNav">{{item}}</view>
+  </view>
+  <!-- <view class="page-group {{scrollTop > 360 ? 'page-group-position' : ''}}">
+        <view class="page-nav-list">
+         <navigator url="/pages/jiaolianduan_chawei/jiaolianduan_chawei">
+          <text>新增排课</text>
+          </navigator>
+        </view>
+      </view> -->
+          <view class="addnew"><navigator url="/pages/addnew/addnew">
+          新增排课
+          </navigator></view>
+  <!-- <view style="height:100%;position:fixed;width:100%;">
+ <scroll-view scroll-y="false" bindscroll="scroll" style="height:100%;">
+  <view class="page-bottom-content">
+   <text>{{text}}</text>
+  </view>
+  <view class="page-banner">
+  </view>
+  <view class="page-group {{scrollTop > 360 ? 'page-group-position' : ''}}">
+   <view class="page-nav-list"><text>新增排课</text></view>
+  </view>
+  <view class="goods-list">
+  </view>
+ </scroll-view>
+</view>
+
+ -->
+
+</view>
+<!-- 悬浮banner -->
+
+

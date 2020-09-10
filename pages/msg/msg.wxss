@@ -1,0 +1,47 @@
+/* pages/msg/msg.wxss */
+
+.container {
+  padding-bottom: 100rpx;
+}
+
+.list_li {
+  background: rgba(59, 59, 59, 0.5);
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.16);
+  margin-bottom: 20rpx;
+  padding: 20rpx 40rpx 20rpx 30rpx;
+  font-size: 20rpx;
+  color:#fff;
+  position: relative;
+}
+.list_li .left{
+  display: flex;
+  align-items: center;
+}
+.list_li .left image{
+  display: block;
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+  flex-shrink: 0;
+}
+.list_li .name{
+  color: rgba(136, 136, 136, 1);
+  margin-bottom: 10rpx;
+}
+
+.list_li .time{
+  position: absolute;
+  right: 30rpx;
+  top: 20rpx;
+  color: rgba(136, 136, 136, 1);
+}
+.ellipsis{
+  display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal !important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}

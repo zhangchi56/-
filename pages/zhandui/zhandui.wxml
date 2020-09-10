@@ -1,0 +1,205 @@
+<!--pages/my_team/my_team.wxml-->
+<view class="container">
+  <view class="header">
+    <image class="header_bj" src="/images/mb.png"></image>
+    <view class="header_ct">
+      <view class="row1">
+        <view class="btn">退出战队</view>
+        <image src="/images/zds.png"></image>
+        <view class="btn">邀请好友</view>
+      </view>
+      <view class="teamName" bindtap="change_name">银河铁路小分队(12）</view>
+      <view class="target" bindtap="change_target">说到小目标，在下只能想到一个亿。</view>
+    </view>
+  </view>
+  <view class="headline">
+    <image src="/images/title.png"></image>
+    <view class="num">12</view>
+  </view>
+  <view class="notice">
+    <image class="notice_img" src="/images/tz.png"></image>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="true" interval="3000" duration="500" circular="true" vertical="true" style='height:40rpx;'>
+      <block>
+        <swiper-item>队友
+          <text class="name">红荔驴与鱼</text>约了一节【动感单车】</swiper-item>
+      </block>
+      <block>
+        <swiper-item>队友
+          <text class="name">红荔驴与鱼</text>约了一节【动感单车】</swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="section">
+    <view class="title">
+      <view class="tb1">排名</view>
+      <view class="tb2">团操</view>
+      <view class="tb3">训练营</view>
+      <view class="tb4">私教</view>
+      <view class="tb5">战分</view>
+    </view>
+    <view class="list {{showAll?'showAll':''}}">
+      <view class="list_li">
+        <view class="left tb1">
+          <view class="rank">
+            <image src="/images/dbx1.png"></image>
+            <view class="txt">1</view>
+          </view>
+          <view class="level">黄金</view>
+          <view class="name">没得感情的昵称</view>
+          <image class="gender" src="/images/nv.png"></image>
+        </view>
+        <view class="tb2">3</view>
+        <view class="tb3">3</view>
+        <view class="tb4">3</view>
+        <view class="score tb5">3</view>
+      </view>
+      <view class="list_li">
+        <view class="left tb1">
+          <view class="rank">
+            <image src="/images/dbx1.png"></image>
+            <view class="txt">2</view>
+          </view>
+          <view class="level">黄金</view>
+          <view class="name">没得感情的昵称</view>
+          <image class="gender" src="/images/nv.png"></image>
+        </view>
+        <view class="tb2">3</view>
+        <view class="tb3">3</view>
+        <view class="tb4">3</view>
+        <view class="score tb5">3</view>
+      </view>
+      <view class="list_li">
+        <view class="left tb1">
+          <view class="rank">
+            <image src="/images/dbx1.png"></image>
+            <view class="txt">3</view>
+          </view>
+          <view class="level">黄金</view>
+          <view class="name">没得感情的昵称</view>
+          <image class="gender" src="/images/nv.png"></image>
+        </view>
+        <view class="tb2">3</view>
+        <view class="tb3">3</view>
+        <view class="tb4">3</view>
+        <view class="score tb5">3</view>
+      </view>
+      <view class="list_li me">
+        <view class="left tb1">
+          <view class="rank">
+            <image src="/images/dbx2.png"></image>
+            <view class="txt">4</view>
+          </view>
+          <view class="level">黄金</view>
+          <view class="name">我</view>
+          <image class="gender" src="/images/nv.png"></image>
+        </view>
+        <view class="tb2">3</view>
+        <view class="tb3">3</view>
+        <view class="tb4">3</view>
+        <view class="score tb5">3</view>
+      </view>
+      <view class="list_li">
+        <view class="left tb1">
+          <view class="rank">
+            <image src="/images/dbx1.png"></image>
+            <view class="txt">5</view>
+          </view>
+          <view class="level">黄金</view>
+          <view class="name">没得感情的昵称</view>
+          <image class="gender" src="/images/nv.png"></image>
+        </view>
+        <view class="tb2">3</view>
+        <view class="tb3">3</view>
+        <view class="tb4">3</view>
+        <view class="score tb5">3</view>
+      </view>
+    </view>
+    <view class="more" wx:if="{{more}}" bindtap="show_all">
+      <view><navigator url="/pages/gerenpaiming/gerenpaiming">
+     点击查看本周完整榜单
+  </navigator></view>
+      <view class="icon"></view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="row1">
+      <view class="left">您本周
+        <text>累计上课5天</text>
+      </view>
+      <view class="right">奖励</view>
+    </view>
+    <view class="row2">每周上课3天即可获得奖励</view>
+    <view class="sign">
+      <view class="sign_li">
+        <image src="/images/xz_1.png"></image>
+        <view>周一</view>
+      </view>
+      <view class="sign_li">
+        <image src="/images/xz_1.png"></image>
+        <view>周二</view>
+      </view>
+      <view class="sign_li">
+        <image src="/images/xz_1.png"></image>
+        <view>周三</view>
+      </view>
+      <view class="sign_li">
+        <image src="/images/xz_1.png"></image>
+        <view>周四</view>
+      </view>
+      <view class="sign_li">
+        <image src="/images/xz_1.png"></image>
+        <view>周五</view>
+      </view>
+      <view class="sign_li">
+        <image src="/images/xz_0.png"></image>
+        <view>周六</view>
+      </view>
+      <view class="sign_li">
+        <image src="/images/xz_0.png"></image>
+        <view>周日</view>
+      </view>
+    </view>
+    <view class="row4">完成人数：3人，挑战成功！</view>
+  </view>
+  <view class="section section3">
+    <view class="total">
+      <view class="total_label">总战分</view>
+      <view class="total_score">11332</view>
+    </view>
+    <view class="rank rank1">
+      <image src="/images/qfbd.png"></image>
+      <view><navigator url="/pages/gerenpaiming/gerenpaiming">
+     全服榜单
+  </navigator></view>
+    </view>
+    <view class="rank">
+      <image src="/images/ren.png"></image>
+      <view>
+  <navigator url="/pages/coach_ranking/coach_ranking">
+     教练榜
+  </navigator>
+  </view>
+    </view>
+  </view>
+  <image class="advert" src="/images/advert.png"></image>
+  <view class="activity">
+    <view class="title">最新活动</view>
+    <view class="li">
+      <view>21天减脂塑形动员大会</view>
+      <view class="btn">报 名</view>
+    </view>
+    <view class="li">
+      <view>21天减脂塑形动员大会</view>
+      <view class="btn">报 名</view>
+    </view>
+  </view>
+  <view class="layer_ct" wx:if="{{changeName}}">
+    <view class="layer_ct_inner">
+      <view class="title">修改战队名称</view>
+      <textarea class="inp" placeholder="银河铁路小分队"></textarea>
+      <view class="commit">提交</view>
+    </view>
+    <image class="close" src="/images/close.png" bindtap="close_changeName"></image>
+  </view>
+  <view class="layer" wx:if="{{showLayer}}" bindtap="close_layer" />
+</view>

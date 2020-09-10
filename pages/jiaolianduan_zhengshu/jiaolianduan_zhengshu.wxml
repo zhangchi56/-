@@ -1,0 +1,10 @@
+<!--pages/jiaolianduan_zhengshu/jiaolianduan_zhengshu.wxml-->
+<view class="container">
+  <view class="list">
+    <image src="/images/zs1.png"></image>
+    <image src="/images/zs1.png"></image>
+    <image src="/images/zs1.png"></image>
+    <image src="/images/zs1.png"></image>
+  </view>
+  <view class="btn">上传资格证书</view>
+</view>

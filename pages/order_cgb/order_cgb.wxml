@@ -1,0 +1,47 @@
+<!--pages/order_cgb/order_cgb.wxml-->
+<view class="container">
+  <view class="list">
+    <view class="list_head">
+      <view class="name">此处自定义课程包</view>
+      <view class="address">合肥市蜀山区大华国际港 XX健身房</view>
+    </view>
+    <view class="list_li">
+      <view class="left">
+        <image src="/images/yuan.png"></image>
+        <view>场馆包类型：次/周/月/季/年</view>
+      </view>
+    </view>
+    <view class="list_li">
+      <view class="left">
+        <image src="/images/yuan.png"></image>
+        <view>订单金额：
+          <text class="price">89元</text>
+        </view>
+      </view>
+    </view>
+    <view class="list_li">
+      <view class="left">
+        <image src="/images/yuan.png"></image>
+        <view>战卡折后价：</view>
+      </view>
+      <view class="right">立即开通>></view>
+    </view>
+    <view class="list_li">
+      <view class="left">
+        <image src="/images/yuan.png"></image>
+        <view>使用卡路币：</view>
+      </view>
+      <view class="right">10卡路币可用>></view>
+    </view>
+    <view class="list_li">
+      <view class="left">
+        <image src="/images/yuan.png"></image>
+        <view>使用优惠券</view>
+      </view>
+      <view class="right noCoupon">暂无可用优惠券>></view>
+    </view>
+  </view>
+  <view class="commit">确认订单，微信支付
+    <text class="price2">89元</text>
+  </view>
+</view>

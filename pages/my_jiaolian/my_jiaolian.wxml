@@ -1,0 +1,17 @@
+<!--pages/my_jiaolian/my_jiaolian.wxml-->
+<view class="header">
+      <view class="header_info">
+        <image class="headimg" src="/images/headimg.png"></image>
+        <view>
+          <view class="name">大灰杨123</view>
+          <view class="grade">普通教练</view>
+        </view>
+      </view>
+      <view class="msg">
+        <view>
+        <navigator url="/pages/chat/chat">
+     消息
+  </navigator></view>
+        <image src="/images/msg.png"></image>
+      </view>
+    </view>

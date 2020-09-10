@@ -1,0 +1,92 @@
+/* pages/jiaolianduan_chawei/jiaolianduan_chawei.wxss */
+.seat_ct {
+  padding-bottom: 48rpx;
+  border-top: 2rpx solid rgba(112, 112, 112, 1);
+  border-bottom: 2rpx solid rgba(112, 112, 112, 1);
+  background: rgba(59, 59, 59, 1);
+}
+
+.seat_ct .head {
+  margin: 0 auto 50rpx;
+  width: 381rpx;
+  text-align: center;
+  position: relative;
+  border-width: 50rpx 50rpx 0;
+  border-style: solid;
+  border-color: #fff transparent;
+}
+
+.seat_ct .head_inner {
+  text-align: center;
+  width: 381rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  position: absolute;
+  left: 0;
+  top: -50rpx;
+  color: rgba(220, 50, 74, 1);
+  font-size: 30rpx;
+}
+
+.seat_ct .options {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10rpx;
+}
+
+.seat_ct .options_li {
+  width: 80rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border: 2rpx solid rgba(112, 112, 112, 1);
+  border-radius: 16rpx;
+  margin: 0 20rpx 14rpx;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 30rpx;
+}
+
+.seat_ct .state1 {
+  background: rgba(220, 50, 74, 1);
+  border: none !important;
+}
+
+.seat_ct .state2 {
+  background: rgba(80, 182, 116, 1);
+  border: none !important;
+}
+
+.marks, .marks_li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marks_li {
+  color: #fff;
+  font-size: 24rpx;
+  margin: 50rpx 26rpx 0;
+}
+
+.marks_li .box {
+  width: 80rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border: 2rpx solid rgba(112, 112, 112, 1);
+  border-radius: 16rpx;
+  margin-right: 10rpx;
+  box-sizing: border-box;
+}
+
+.seat_ct .state1 {
+  background: rgba(220, 50, 74, 1);
+  border: none !important;
+}
+
+.seat_ct .state2 {
+  background: rgba(80, 182, 116, 1);
+  border: none !important;
+}
+

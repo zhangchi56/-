@@ -1,0 +1,157 @@
+/* pages/gym/gym.wxss */
+
+.carousel swiper {
+  width: 100%;
+  /* padding: 0 30rpx 6rpx; */
+  box-sizing: border-box;
+  position: relative;
+}
+
+.carousel swiper .slide-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.wx-swiper-dots {
+  position: absolute;
+  top: 90%;
+}
+
+.shop_name {
+  color: #efcc59;
+  font-size: 40rpx;
+  padding: 20rpx 16px;
+}
+
+.shop_section {
+  width: 100%;
+  padding: 25rpx 20rpx;
+  background: rgba(59, 59, 59, 1);
+  border: 2rpx solid rgba(112, 112, 112, 0.5);
+  margin-bottom: 16rpx;
+  box-sizing: border-box;
+}
+.shop .address,.shop .open{
+  display: flex;
+  font-size: 24rpx;
+  color:#fff;
+  margin:5rpx 0;
+}
+.shop .address image,.shop .open image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 8rpx;
+}
+.shop_intr .title{
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color:#fff;
+  margin-bottom: 20rpx;
+}
+.shop_intr .title image{
+width: 14rpx;
+height: 14rpx;
+margin-right: 10rpx;
+}
+.shop_intr .ct{
+color:rgba(255,255,255,0.5);
+font-size: 24rpx;
+}
+.shop_intr .more{
+width: 24rpx;
+height: 14rpx;
+display: block;
+margin: 26rpx auto 0;
+}
+.shop_intr .fold{
+transform: rotate(180deg)
+}
+.ellipsis-2 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.shop_device{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.shop_device_li{
+  margin:20rpx 45rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color:#fff;
+}
+.shop_device_li image{
+ width: 50rpx;
+ height: 50rpx;
+ margin: 0 auto 12rpx;
+}
+.shop_room_title{
+  display: flex;
+  align-items: center;
+  color:#fff;
+  font-size: 24rpx;
+}
+.shop_room_title image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 8rpx;
+}
+.shop_room_li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 0;
+  color:#fff;
+  font-size: 26rpx;
+  border-bottom:2rpx solid rgba(220,220,220,1);
+}
+.shop_room_li .name,.shop_room_li .type,.shop_room_li .price{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+      white-space: nowrap;
+      -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.shop_room_li .name{
+    width: 260rpx;
+}
+.shop_room_li .price,.shop_room_li .type{
+  text-align: center;
+  width: 100rpx;
+}
+.shop_room_li .buy{
+  text-align: center;
+  width: 158rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 18rpx;
+  font-size: 30rpx;
+  color: #fff;
+  margin: 6rpx 0;
+    background: #DC324A;
+}
+
+.return{
+  width: 608rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  box-shadow: 0px -4rpx 8rpx rgba(0, 0, 0, 0.16);
+  opacity: 1;
+  border-radius: 20rpx;
+  background-color:  rgba(239, 204, 89, 0.5);
+  margin: 66rpx auto 0;
+  text-align: center;
+  color: #fff;
+  font-size: 32rpx;
+}

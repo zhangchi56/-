@@ -1,0 +1,32 @@
+<!--pages/msg/msg.wxml-->
+<view class="container">
+  <view class="list">
+    <view class="list_li">
+      <view class="left">
+        <image src="/images/headimg.png"></image>
+        <view>
+          <view class="name">
+          <navigator url="/pages/chat/chat">
+     一只大灰杨
+  </navigator></view>
+          <view class="ct ellipsis">
+          <navigator url="/pages/chat/chat">
+     今天有没有过来锻炼呢?今天有没有过来锻炼呢?今天有没有过来锻炼呢?今天有没有过来锻炼呢?今天有没有过来锻炼呢?
+  </navigator>
+          </view>
+        </view>
+      </view>
+      <view class="time">12:20</view>
+    </view>
+    <view class="list_li">
+      <view class="left">
+        <image src="/images/msg2.png"></image>
+        <view>
+          <view class="name">一只大灰杨</view>
+          <view class="ct">今天有没有过来锻炼呢?</view>
+        </view>
+      </view>
+      <view class="time">12:20</view>
+    </view>
+  </view>
+</view>

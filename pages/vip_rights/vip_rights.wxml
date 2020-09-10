@@ -1,0 +1,45 @@
+<!--pages/vip_rights/vip_rights.wxml-->
+<view class="container">
+  <view class="header">
+    <image class="header_bj" src="/images/bj2.png"></image>
+    <view class="header_ct">
+      <image class="title" src="/images/hyqy.png"></image>
+      <view class="subTitle">会员到期日：2019-12-12</view>
+    </view>
+  </view>
+  <view class="right">
+    <image mode="aspectFill" src="/images/juxing.png" class="bj" />
+    <view class="mask">
+    <!-- 战分没有达到，战分达到两种样式如下 -->
+      <view wx:if="{{current==false}}" class="title">黄金会员</view>
+      <view wx:if="{{current==true}}">
+          <view class="bless">恭喜您</view>
+          <view class="grade">
+            <view>当前等级：</view>
+            <view class="grade_show">铂金会员</view>
+          </view>
+      </view>
+      <image class="hy {{current==false?'hy_1':''}}" src="/images/hjhy.png"></image>
+      <view class="score {{current==false?'':'scoreReach'}}">战分{{current==false?'':'已'}}达到6000分</view>
+      <view class="tips">您将获得如下权益</view>
+      <view class="row">
+        <view class="row_li">
+          <image src="/images/zf.png"></image>
+          <view>战分+30</view>
+        </view>
+        <view class="row_li">
+          <image src="/images/yhq.png"></image>
+          <view>优惠券¥30</view>
+        </view>
+        <view class="row_li">
+          <image src="/images/klb.png"></image>
+          <view>卡路币+30</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="explain">
+    <view class="title">会员权益说明：</view>
+    <view>会员权益说明会员权益说明会员权益说明会员权益说明会员权益说明会员权益说明会员权益说明</view>
+  </view>
+</view>

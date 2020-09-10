@@ -1,0 +1,88 @@
+<!--pages/gym/gym.wxml-->
+<view class="container">
+  <view class="carousel">
+    <swiper indicator-dots="true" autoplay="true" interval="5000" duration="500" circular="true" style='height:300rpx;'>
+      <block>
+        <swiper-item>
+          <image src="/images/banner1.png" class="slide-image" mode='aspectFill' />
+        </swiper-item>
+        <swiper-item>
+          <image src="/images/banner1.png" class="slide-image" mode='aspectFill' />
+        </swiper-item>
+      </block>
+    </swiper>.
+
+  </view>
+  <view class="shop">
+    <view class="shop_name">合肥金克斯</view>
+    <view class="shop_section">
+      <view class="address">
+        <image src="/images/address.png"></image>
+        <view bindtap="seeMap">地址：合肥市蜀山区人民政府大楼</view>
+      </view>
+      <view class="open">
+        <image src="/images/kfsj.png"></image>
+        <view>开放时间：</view>
+        <view>
+          <view>周一至周五08：00-21：00</view>
+          <view>周六至周末08：00-21：00</view>
+        </view>
+      </view>
+    </view>
+    <view class="shop_section shop_intr">
+      <view class="title">
+        <image src="/images/yuan.png"></image>
+        <view>简介</view>
+      </view>
+      <view class="ct {{showMore?'':'ellipsis-2'}}">
+        美莱认证教练，这些都是教练的个人介绍，美莱认证教练，这些都是教练的个人介绍美莱认证教练，这些都是教练的个人介,这些都是教练的个人介绍，美莱认证教练，这些都是教练的个人介绍美莱认证教练，这些都是教练的个人介。
+      </view>
+      <image class="more {{showMore?'fold':''}}" src="/images/zk.png" bindtap="show_more"></image>
+    </view>
+    <view class="shop_section shop_device">
+      <view class="shop_device_li">
+        <image src="/images/tcc.png"></image>
+        <view>停车场</view>
+      </view>
+      <view class="shop_device_li">
+        <image src="/images/gys.png"></image>
+        <view>更衣室</view>
+      </view>
+      <view class="shop_device_li">
+        <image src="/images/cwg.png"></image>
+        <view>储物柜</view>
+      </view>
+      <view class="shop_device_li">
+        <image src="/images/muyu.png"></image>
+        <view>沐浴</view>
+      </view>
+    </view>
+    <view class="shop_section shop_room">
+      <view class="shop_room_title">
+        <image src="/images/cgb.png"></image>
+        <view>场馆包</view>
+      </view>
+      <view class="shop_room_li">
+        <view class="name">场馆包名称</view>
+        <view class="type">30次</view>
+        <view class="price">1099元</view>
+        <view class="buy">
+        <navigator url="/pages/order_cgb/order_cgb">
+购 买
+  </navigator>
+        </view>
+      </view>
+      <view class="shop_room_li">
+        <view class="name">场馆包名称场</view>
+        <view class="type">周</view>
+        <view class="price">99元</view>
+        <view class="buy"><navigator url="/pages/order_cgb/order_cgb">
+购 买
+  </navigator></view>
+      </view>
+    </view>
+  </view>
+<view class="return" bindtap="navigationback">
+          返回上页
+          </view>
+</view>

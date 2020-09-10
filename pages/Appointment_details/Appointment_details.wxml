@@ -1,0 +1,104 @@
+<!--pages/Appointment_details/Appointment_details.wxml-->
+<view class="container">
+  <view class="list">
+    <view class="list_head">
+      <view class="name">此处自定义课程包</view>
+      <view class="address">合肥市蜀山区大华国际港 XX健身房</view>
+    </view>
+    <view class="list_li">
+      <view class="left">
+        <image src="/images/yuan.png"></image>
+        <view>课程类型：团操/私教/训练营</view>
+      </view>
+    </view>
+    <view class="list_li">
+      <view class="left">
+        <image src="/images/yuan.png"></image>
+        <view>课程名称：此处名称</view>
+      </view>
+    </view>
+    <view class="list_li">
+      <view class="left">
+        <image src="/images/yuan.png"></image>
+        <view>教练：tony wong</view>
+      </view>
+    </view>
+    <view class="list_li">
+      <view class="left">
+        <image src="/images/yuan.png"></image>
+        <view>教室：此处为教室详细地点</view>
+      </view>
+    </view>
+    <view class="list_li">
+      <view class="left">
+        <image src="/images/yuan.png"></image>
+        <view style="margin-right:20rpx;">上课时间：</view>
+        <picker mode="time" value="{{time}}" start="09:30" end="21:00" bindchange="bindTimeChange">
+          <view class="picker">
+            {{time}}
+          </view>
+          <image class="icon" src="/images/sjx.png"></image>
+        </picker>
+        <view class="line"></view>
+        <picker mode="time" value="{{time}}" start="10:30" end="22:00" bindchange="bindTimeChange">
+          <view class="picker">
+            {{time}}
+          </view>
+          <image class="icon" src="/images/sjx.png"></image>
+        </picker>
+      </view>
+    </view>
+    <view class="seat">
+      <view class="seat_tips">(请根据场馆对应教室座位表选择位置)</view>
+      <view class="seat_ct">
+        <view class="head">
+          <view class="head_inner">讲台</view>
+        </view>
+        <view class="options">
+          <view class="options_li state1">1A</view>
+          <view class="options_li">1B</view>
+          <view class="options_li">1C</view>
+          <view class="options_li state2">1D</view>
+          <view class="options_li">1E</view>
+          <view class="options_li">1F</view>
+          <view class="options_li">2A</view>
+          <view class="options_li">2B</view>
+          <view class="options_li">2C</view>
+          <view class="options_li">2D</view>
+          <view class="options_li">2E</view>
+          <view class="options_li">2F</view>
+        </view>
+        <view class="marks">
+          <view class="marks_li">
+            <view class="box"></view>
+            <view>可选</view>
+          </view>
+          <view class="marks_li">
+            <view class="box state1"></view>
+            <view>不可选</view>
+          </view>
+          <view class="marks_li">
+            <view class="box state2"></view>
+            <view>已选择</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="section">
+      <view class="section_title">
+        <image src="/images/icon10.png"></image>
+        <view>说明</view>
+      </view>
+      <view class="section_ct">
+        课前24小时以上 3元 课前12小时以上 2元 课前6小时以上 1元 课前6小时内 0元</view>
+    </view>
+    <view class="list_li">
+      <view class="left">
+        <image src="/images/yuan.png"></image>
+        <view>订单金额：
+          <text class="price">89元</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

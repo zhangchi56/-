@@ -1,0 +1,26 @@
+/* pages/jiaolianduan_zhengshu/jiaolianduan_zhengshu.wxss */
+.container{
+  padding-bottom: 150rpx;
+}
+.list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.list image{
+  width: 260rpx;
+  height: 195rpx;
+  margin-left: 76rpx;
+  margin-top: 30rpx;
+}
+.btn{
+  width:608rpx;
+height:100rpx;
+line-height: 100rpx;
+text-align: center;
+background:rgba(220,50,74,1);
+box-shadow:0px -4rpx 8rpx rgba(0,0,0,0.16);
+border-radius:20rpx;
+font-size: 32rpx;
+color:#fff;
+margin: 100rpx auto 0;
+}

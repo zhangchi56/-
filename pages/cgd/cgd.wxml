@@ -1,0 +1,486 @@
+<!--pages/cgd/cgd.wxml-->
+<view class="container">
+  <view class="top">
+    <view class="scan">
+      <image src="/images/scan.png"></image>
+      <view>验证入场</view>
+    </view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        {{array[index]}}
+      </view>
+      <image class="icon" src="/images/sjx.png"></image>
+    </picker>
+  </view>
+  <view class="list1" wx:if="{{id==0}}">
+    <view class="section">
+      <view class="section_row1">
+        <view class="tab">
+          <view class="tab_li {{tabId=='A'?'active':''}}" data-select="A" bindtap="selectTab">团操</view>
+          <view class="tab_li {{tabId=='B'?'active':''}}" data-select="B" bindtap="selectTab">训练营</view>
+          <view class="tab_li {{tabId=='C'?'active':''}}" data-select="C" bindtap="selectTab">私教</view>
+        </view>
+      </view>
+      <view class="calendar">
+        <view class="calendar_li calendar_active">
+          <view class="date">今天</view>
+          <view class="week">三</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.11</view>
+          <view class="week">四</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.12</view>
+          <view class="week">五</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.13</view>
+          <view class="week">六</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.14</view>
+          <view class="week">日</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.15</view>
+          <view class="week">一</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.16</view>
+          <view class="week">二</view>
+        </view>
+      </view>
+    </view>
+    <view class="gym" wx:if="{{tabId=='A'}}">
+      <!-- <view class="store">
+        <view></view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array2}}">
+          <view class="picker">
+            {{array2[index]}}
+          </view>
+          <image class="icon" src="/images/sjx.png"></image>
+        </picker>
+      </view> -->
+      <view class="li">
+        <view class="li_left">
+          <view class="name">燃脂普拉提</view>
+          <view class="t2">08:40-12:00 / 预约人数：
+            <text class="num">32/100</text>
+          </view>
+          <view class="t3">
+            <text class="jiaolian">杨教练</text>|
+            <text>教室：302</text>
+            <text class="seeSeat">查看选位</text>
+          </view>
+        </view>
+        <view class="li_right">
+          <view class="btn btn1">已确认</view>
+          <view class="btn btn2">更改</view>
+        </view>
+      </view>
+      <view class="li">
+        <view class="li_left">
+          <view class="name">燃脂普拉提</view>
+          <view class="t2">08:40-12:00 / 预约人数：
+            <text class="num">32/100</text>
+          </view>
+          <view class="t3">
+            <text class="jiaolian">杨教练</text>|
+            <text>教室：302</text>
+            <text class="seeSeat">查看选位</text>
+          </view>
+        </view>
+        <view class="li_right">
+          <view class="btn btn1 unconfirmed">等待确认</view>
+          <view class="btn btn2">更改</view>
+        </view>
+      </view>
+      <view class="beforeCommit">新增排课</view>
+    </view>
+    <view class="gym" wx:if="{{tabId=='B'}}">
+      <!-- <view class="store">
+        <view></view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array2}}">
+          <view class="picker">
+            {{array2[index]}}
+          </view>
+          <image class="icon" src="/images/sjx.png"></image>
+        </picker>
+      </view> -->
+      <view class="li">
+        <view class="li_left">
+          <view class="name">燃脂普拉提2</view>
+          <view class="t2">08:40-12:00 / 预约人数：
+            <text class="num">32/100</text>
+          </view>
+          <view class="t3">
+            <text class="jiaolian">杨教练</text>|
+            <text>教室：302</text>
+            <text class="seeSeat">查看选位</text>
+          </view>
+        </view>
+        <view class="li_right">
+          <view class="btn btn1">已确认</view>
+          <view class="btn btn2">更改</view>
+        </view>
+      </view>
+      <view class="li">
+        <view class="li_left">
+          <view class="name">燃脂普拉提</view>
+          <view class="t2">08:40-12:00 / 预约人数：
+            <text class="num">32/100</text>
+          </view>
+          <view class="t3">
+            <text class="jiaolian">杨教练</text>|
+            <text>教室：302</text>
+            <text class="seeSeat">查看选位</text>
+          </view>
+        </view>
+        <view class="li_right">
+          <view class="btn btn1 unconfirmed">等待确认</view>
+          <view class="btn btn2">更改</view>
+        </view>
+      </view>
+      <view class="beforeCommit">新增排课</view>
+    </view>
+    <view class="gym" wx:if="{{tabId=='C'}}">
+      <!-- <view class="store">
+        <view></view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array2}}">
+          <view class="picker">
+            {{array2[index]}}
+          </view>
+          <image class="icon" src="/images/sjx.png"></image>
+        </picker>
+      </view> -->
+      <view class="li li2">
+        <view class="li_left">
+          <image src="/images/headimg.png"></image>
+          <view>
+            <view class="name">一只大灰杨</view>
+            <view class="t2">
+              <text class="name">此处课程名称</text>
+              <text class="time">08:40-12:00</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="li li2">
+        <view class="li_left">
+          <image src="/images/headimg.png"></image>
+          <view>
+            <view class="name">一只大灰杨</view>
+            <view class="t2">
+              <text class="name">此处课程名称</text>
+              <text class="time">08:40-12:00</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="beforeCommit">新增排课</view>
+    </view>
+  </view>
+  <view class="list2" wx:if="{{id==1}}">
+    <view class="section">
+      <view class="section_row1" style="margin-bottom:0;">
+        <view class="tab">
+          <view class="tab_li {{tabId2=='a'?'active':''}}" data-select="a" bindtap="selectTab2">团操</view>
+          <view class="tab_li {{tabId2=='b'?'active':''}}" data-select="b" bindtap="selectTab2">训练营</view>
+          <view class="tab_li {{tabId2=='c'?'active':''}}" data-select="c" bindtap="selectTab2">私教</view>
+        </view>
+      </view>
+    </view>
+    <view class="gym" wx:if="{{tabId2=='a'}}">
+      <!-- <view class="store">
+        <view></view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array2}}">
+          <view class="picker">
+            {{array2[index]}}
+          </view>
+          <image class="icon" src="/images/sjx.png"></image>
+        </picker>
+      </view> -->
+      <view class="li3">
+        <view class="li_head">
+          <image class="headimg" src="/images/headimg.png"></image>
+          <view class="name">一只大灰杨</view>
+        </view>
+        <view class="li_item">
+          <view class="courseName">课程包名称1</view>
+          <view class="price">30节/1200元</view>
+          <view class="right">
+            <view class="btn btn1">
+            <navigator url="/pages/work_out/work_out">
+     修改
+  </navigator></view>
+            <view class="btn">下架</view>
+          </view>
+        </view>
+        <view class="li_item">
+          <view class="courseName">课程包名称1</view>
+          <view class="price">30节/1200元</view>
+          <view class="right">
+            <view class="btn btn1">修改</view>
+            <view class="btn">下架</view>
+          </view>
+        </view>
+      </view>
+      <view class="li3">
+        <view class="li_head">
+          <image class="headimg" src="/images/headimg.png"></image>
+          <view class="name">一只大灰杨</view>
+        </view>
+        <view class="li_item">
+          <view class="courseName">课程包名称1</view>
+          <view class="price">30节/1200元</view>
+          <view class="right">
+            <view class="btn btn1">修改</view>
+            <view class="btn">下架</view>
+          </view>
+        </view>
+        <view class="li_item">
+          <view class="courseName">课程包名称1</view>
+          <view class="price">30节/1200元</view>
+          <view class="right">
+            <view class="btn btn1">修改</view>
+            <view class="btn">下架</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="gym" wx:if="{{tabId2=='b'}}">
+      <!-- <view class="store">
+        <view></view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array2}}">
+          <view class="picker">
+            {{array2[index]}}
+          </view>
+          <image class="icon" src="/images/sjx.png"></image>
+        </picker>
+      </view> -->
+      <view class="li3">
+        <view class="li_item">
+          <view class="courseName">课程包名称1</view>
+          <view class="price">30节/1200元</view>
+          <view class="right">
+            <view class="btn btn1"><navigator url="/pages/work_out/work_out">
+     修改
+  </navigator></view>
+            <view class="btn">下架</view>
+          </view>
+        </view>
+        <view class="li_item">
+          <view class="courseName">课程包名称1</view>
+          <view class="price">30节/1200元</view>
+          <view class="right">
+            <view class="btn btn1">修改</view>
+            <view class="btn">下架</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="gym" wx:if="{{tabId2=='c'}}">
+      <!-- <view class="store">
+        <view></view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array2}}">
+          <view class="picker">
+            {{array2[index]}}
+          </view>
+          <image class="icon" src="/images/sjx.png"></image>
+        </picker>
+      </view> -->
+      <view class="li3">
+        <view class="li_head">
+          <image class="headimg" src="/images/headimg.png"></image>
+          <view class="name">一只大灰杨</view>
+        </view>
+        <view class="li_item">
+          <view class="courseName">课程包名称1</view>
+          <view class="price">30节/1200元</view>
+          <!-- <view class="right">
+            <view class="btn btn1"><navigator url="/pages/work_out/work_out">
+     修改
+  </navigator></view>
+            <view class="btn">下架</view>
+          </view> -->
+        </view>
+        <view class="li_item">
+          <view class="courseName">课程包名称1</view>
+          <view class="price">30节/1200元</view>
+          <!-- <view class="right">
+            <view class="btn btn1">修改</view>
+            <view class="btn">下架</view>
+          </view> -->
+        </view>
+      </view>
+      <view class="li3">
+        <view class="li_head">
+          <image class="headimg" src="/images/headimg.png"></image>
+          <view class="name">一只大灰杨</view>
+        </view>
+        <view class="li_item">
+          <view class="courseName">课程包名称1</view>
+          <view class="price">30节/1200元</view>
+          <!-- <view class="right">
+            <view class="btn btn1">修改</view>
+            <view class="btn">下架</view>
+          </view> -->
+        </view>
+        <view class="li_item">
+          <view class="courseName">课程包名称1</view>
+          <view class="price">30节/1200元</view>
+          <!-- <view class="right">
+            <view class="btn btn1">修改</view>
+            <view class="btn">下架</view>
+          </view> -->
+        </view>
+      </view>
+
+    </view>
+    <view class="beforeCommit">新增课程包</view>
+  </view>
+  <view class="list3" wx:if="{{id==2}}">
+    <view class="gym">
+      <!-- <view class="store">
+        <view></view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array2}}">
+          <view class="picker">
+            {{array2[index]}}
+          </view>
+          <image class="icon" src="/images/sjx.png"></image>
+        </picker>
+      </view> -->
+      <view class="li3 li4">
+        <view class="li_item">
+          <view class="courseName">课程包名称1</view>
+          <view class="type">
+            <view class="type_li">
+              <view class="price">30节/1200元</view>
+              <view class="right">
+                <view class="btn btn1">
+                <navigator url="/pages/work_out/work_out">
+                修改
+                </navigator>
+                </view>
+                <view class="btn">下架</view>
+              </view>
+            </view>
+            <view class="type_li">
+              <view class="price">30节/1200元</view>
+              <view class="right">
+                <view class="btn btn1">修改</view>
+                <view class="btn">下架</view>
+              </view>
+            </view>
+            <view class="type_li">
+              <view class="price">30节/1200元</view>
+              <view class="right">
+                <view class="btn btn1">修改</view>
+                <view class="btn">下架</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="li3 li4">
+        <view class="li_item">
+          <view class="courseName">课程包名称1</view>
+          <view class="type">
+            <view class="type_li">
+              <view class="price">30节/1200元</view>
+              <view class="right">
+                <view class="btn btn1">修改</view>
+                <view class="btn">下架</view>
+              </view>
+            </view>
+            <view class="type_li">
+              <view class="price">30节/1200元</view>
+              <view class="right">
+                <view class="btn btn1">修改</view>
+                <view class="btn">下架</view>
+              </view>
+            </view>
+            <view class="type_li">
+              <view class="price">30节/1200元</view>
+              <view class="right">
+                <view class="btn btn1">修改</view>
+                <view class="btn">下架</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="beforeCommit">新增场馆包</view>
+  </view>
+  <view class="list4" wx:if="{{id==3}}">
+    <view class="choose">
+      <!-- <picker bindchange="bindPickerChange" value="{{index}}" range="{{array2}}">
+        <view class="picker">
+          {{array2[index]}}
+        </view>
+        <image class="icon" src="/images/sjx.png"></image>
+      </picker> -->
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array3}}">
+        <view class="picker">
+          {{array3[index]}}
+        </view>
+        <image class="icon" src="/images/sjx.png"></image>
+      </picker>
+    </view>
+    <view class="seat">
+      <view class="seat_tips">(请根据场馆对应教室座位表选择位置)</view>
+      <view class="seat_ct">
+        <view class="head">
+          <view class="head_inner">讲台</view>
+        </view>
+        <view class="options">
+          <view class="options_li">1A</view>
+          <view class="options_li">1B</view>
+          <view class="options_li">1C</view>
+          <view class="options_li state2">1D</view>
+          <view class="options_li">1E</view>
+          <view class="options_li">1F</view>
+          <view class="options_li">2A</view>
+          <view class="options_li state2">2B</view>
+          <view class="options_li">2C</view>
+          <view class="options_li state2">2D</view>
+          <view class="options_li">2E</view>
+          <view class="options_li">2F</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="list5" wx:if="{{id==4}}">
+    <view class="choose">
+      <!-- <picker bindchange="bindPickerChange" value="{{index}}" range="{{array2}}">
+        
+      </picker> -->
+    </view>
+    <view class="row">
+      <view class="row_li">
+        <view><navigator url="/pages/cgd_jiesuan/cgd_jiesuan">
+     结算确认
+  </navigator></view>
+        <image class="more" src="/images/more.png"></image>
+      </view>
+      <view class="row_li">
+        <view><navigator url="/pages/cgd_yuekelv/cgd_yuekelv">
+     教练约课率
+  </navigator></view>
+        <image class="more" src="/images/more.png"></image>
+      </view>
+      <view class="row_li">
+        <view><navigator url="/pages/cgd_quanxian/cgd_quanxian">
+     权限名单
+  </navigator></view>
+        <image class="more" src="/images/more.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="nav">
+    <view class="nav_tab {{index==id?'active':''}}" wx:for="{{nav}}" wx:key="" data-index="{{index}}" bindtap="selectNav">{{item}}</view>
+  </view>
+  
+</view>

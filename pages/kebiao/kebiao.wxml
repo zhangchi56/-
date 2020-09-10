@@ -1,0 +1,471 @@
+<!--pages/kebiao/kebiao.wxml-->
+<view class="container">
+  <view class="top">
+    <view class="nav">
+      <view class="nav_li {{select=='A'?'active':''}}" data-select="A" bindtap="select">我的课表</view>
+      <view class="nav_li nav_cgb {{select=='C'?'active':''}}" data-select="C" bindtap="select">场管包</view>
+      <view class="nav_li nav_kcb {{select=='B'?'active':''}}" data-select="B" bindtap="select">课程包</view>
+    </view>
+    <view class="calendar" wx:if="{{select=='A'}}">
+      <view class="calendar_li calendar_active">
+        <view class="date">{{today}}</view>
+        <view class="week">三</view>
+      </view>
+      <view class="calendar_li">
+        <view class="date">12.11</view>
+        <view class="week">四</view>
+      </view>
+      <view class="calendar_li">
+        <view class="date">12.12</view>
+        <view class="week">五</view>
+      </view>
+      <view class="calendar_li">
+        <view class="date">12.13</view>
+        <view class="week">六</view>
+      </view>
+      <view class="calendar_li">
+        <view class="date">12.14</view>
+        <view class="week">日</view>
+      </view>
+      <view class="calendar_li">
+        <view class="date">12.15</view>
+        <view class="week">一</view>
+      </view>
+      <view class="calendar_li">
+        <view class="date">{{sevenday}}</view>
+        <view class="week">二</view>
+      </view>
+    </view>
+  </view>
+  <view class="content" wx:if="{{select=='A'}}">
+    <view class="gym">
+      <view class="gym_head">
+        <view class="shop">合肥金克斯</view>
+        <view class="place" bindtap="seeMap">查看地图</view>
+      </view>
+      <view class="li">
+        <view class="li_left">
+          <image src="/images/headimg.png" bindtap="hanldCoach"></image>
+          <view>
+            <view class="name">燃脂普拉提</view>
+            <view class="t2">08:40-12:00 (教室302）</view>
+          </view>
+        </view>
+        <view class="li_right">
+          <view class="btn btn1" bindtap="xuanwei">选位</view>
+          <view class="btn btn2" bindtap="refund">取消</view>
+        </view>
+      </view>
+      <view class="li">
+        <view class="li_left">
+          <image src="/images/headimg.png" bindtap="hanldCoach"></image>
+          <view>
+            <view class="name">燃脂普拉提</view>
+            <view class="t2">08:40-12:00 (教室302）</view>
+          </view>
+        </view>
+        <view class="li_right">
+          <view class="btn btn1" bindtap="xuanwei">排队</view>
+          <view class="btn btn2" bindtap="refund">取消</view>
+        </view>
+      </view>
+      <view class="li">
+        <view class="li_left">
+          <image src="/images/headimg.png" bindtap="hanldCoach"></image>
+          <view>
+            <view class="name">燃脂普拉提</view>
+            <view class="t2">08:40-12:00 (教室302）</view>
+          </view>
+        </view>
+        <view class="li_right">
+          <view class="btn btn3" bindtap="handle_comment">评价</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="content course" wx:if="{{select=='B'}}">
+    <view class="list">
+      <view class="list_type">团操</view>
+      <view class="list_li">
+        <view class="head"  bindtap="hanldCoach">
+          <view class="name">课程包名称</view>
+          <view class="remain">33次课/共50次课</view>
+        </view>
+        <view class="coach"  bindtap="hanldCoach">
+          <image src="/images/headimg.png" bindtap="hanldCoach"></image>
+          <view>教练:Tony wong</view>
+        </view>
+        <view class="store">
+          <image src="/images/wz.png"></image>
+          <view class="store_ct">
+            <view class="store_ct_li">
+              <text>适用场馆：合肥金克斯</text>
+              <text class="info">场馆信息</text>
+            </view>
+            <view class="store_ct_li">
+              <text>适用场馆：合肥金克斯</text>
+              <text class="info">场馆信息</text>
+            </view>
+          </view>
+        </view>
+        <view class="foot">
+          <view class="right">
+            <view class="btn btn2" bindtap="refund">退款</view>
+            <view class="btn btn1" bindtap="hanldMake">预约</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="list_type">私教</view>
+      <view class="list_li">
+        <view class="head"  bindtap="hanldCoach">
+          <view class="name">课程包名称</view>
+          <view class="remain">33次课/共50次课</view>
+        </view>
+        <view class="coach"  bindtap="hanldCoach">
+          <image src="/images/headimg.png" bindtap="hanldCoach"></image>
+          <view>教练:Tony wong</view>
+        </view>
+        <view class="store">
+          <image src="/images/wz.png"></image>
+          <view class="store_ct">
+            <view class="store_ct_li">
+              <text>适用场馆：合肥金克斯</text>
+              <text class="info">
+              <navigator url="/pages/gym/gym?gym_id={{item.gym_id}}">
+     场馆信息
+  </navigator>
+              </text>
+            </view>
+            <view class="store_ct_li">
+              <text>适用场馆：合肥金克斯</text>
+              <text class="info">场馆信息</text>
+            </view>
+          </view>
+        </view>
+        <view class="foot">
+          <view class="right">
+            <view class="btn btn2" bindtap="refund">退款</view>
+            <view class="btn btn1" bindtap="hanldMake">预约</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="list_type">训练营</view>
+      <view class="list_li">
+        <view class="head" bindtap="hanldCoach">
+          <view class="name">课程包名称</view>
+          <view class="remain">33次课/共50次课</view>
+        </view>
+        <view class="coach">
+          <image src="/images/headimg.png" bindtap="hanldCoach"></image>
+          <view bindtap="hanldCoach">教练:Tony wong</view>
+        </view>
+        <view class="store">
+          <image src="/images/wz.png"></image>
+          <view class="store_ct">
+            <view class="store_ct_li">
+              <text>适用场馆：合肥金克斯</text>
+              <text class="info">场馆信息</text>
+            </view>
+          </view>
+        </view>
+        <view class="foot">
+          <view class="right">
+            <view class="btn btn2" bindtap="refund">退款</view>
+            <view class="btn btn1" bindtap="hanldMake">预约</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="content" wx:if="{{select=='C'}}">
+    <view class="list">
+      <view class="list_type">
+        <view>合肥金克斯</view>
+        <view class="seeMap" bindtap="seeMap">查看地图</view>
+      </view>
+      <view class="list_li">
+        <view class="head">
+          <view class="name">自定义场馆包名称</view>
+          <view class="remain">33次课/共50次课</view>
+        </view>
+        <view class="foot">
+          <view class="right">
+            <view class="btn btn2" bindtap="refund">退款</view>
+            <view class="btn btn4">使用</view>
+          </view>
+        </view>
+      </view>
+      <view class="list_li">
+        <view class="head">
+          <view class="name">自定义场馆包名称</view>
+          <view class="remain">周</view>
+        </view>
+        <view class="foot">
+          <view class="tip">自开通之日起生效</view>
+          <view class="right">
+            <view class="btn btn2" bindtap="refund">退款</view>
+            <view class="btn btn1">生效中</view>
+          </view>
+        </view>
+      </view>
+      <view class="list_li">
+        <view class="head">
+          <view class="name">自定义场馆包名称</view>
+          <view class="remain">月</view>
+        </view>
+        <view class="foot">
+          <view class="tip">有效期至2019-12-12</view>
+          <view class="right">
+            <view class="btn btn2" bindtap="refund">退款</view>
+            <view class="btn btn1">生效中</view>
+          </view>
+        </view>
+      </view>
+      <view class="list_li">
+        <view class="head">
+          <view class="name">自定义场馆包名称</view>
+          <view class="remain">季</view>
+        </view>
+        <view class="foot">
+          <view class="tip">有效期至2019-12-12</view>
+          <view class="right">
+            <view class="btn btn2" bindtap="refund">退款</view>
+            <view class="btn btn1">点击开通</view>
+          </view>
+        </view>
+      </view>
+      <view class="list_li">
+        <view class="head">
+          <view class="name">自定义场馆包名称</view>
+          <view class="remain">年</view>
+        </view>
+        <view class="foot">
+          <view class="tip">有效期至2019-12-12</view>
+          <view class="right">
+            <view class="btn btn2" bindtap="refund">退款</view>
+            <view class="btn btn1">点击开通</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="layer_ct" wx:if="{{showComment}}">
+    <view class="layer_ct_inner">
+      <view class="title">您的好评就是对我们最大的鼓励啦！</view>
+      <view class="subTitle">- 综合评价 -</view>
+      <view class="type">
+        <view class="type_li {{appr=='good'?'type_active':''}}" data-appr="good" bindtap="comment">
+          <image src="{{appr=='good'?'/images/hp.png':'/images/hp_1.png'}}"></image>
+          <view>好评</view>
+        </view>
+        <view class="type_li {{appr=='general'?'type_active':''}}" data-appr="general" bindtap="comment">
+          <image src="{{appr=='general'?'/images/zp.png':'/images/zp_1.png'}}"></image>
+          <view>中评</view>
+        </view>
+        <view class="type_li {{appr=='bad'?'type_active':''}}" data-appr="bad" bindtap="comment">
+          <image src="{{appr=='bad'?'/images/cp.png':'/images/cp_1.png'}}"></image>
+          <view>差评</view>
+        </view>
+      </view>
+      <textarea class="inp" placeholder="说点什么"></textarea>
+      <view class="commit">提交</view>
+    </view>
+    <image class="close" src="/images/close.png" bindtap="close_comment"></image>
+  </view>
+  <view class="layer_ct" wx:if="{{refund}}">
+    <view class="layer_ct_inner">
+      <!-- 点击不同的退款按钮给予不同的提示内容，分为三种类型 -->
+      <view class="tip">提示：次数场馆包：仅使用1次可全额退款，使用超过1次将收取全款30%的手续费； 周场馆包：开通后24小时内可全额退款，超过24小时将收取全款30%的手续费; 月、季、年场馆包：开通后3天内可全额退款，超过3天将收取全款30%的手续费。
+      </view>
+      <view class="commit" bindtap="tuikuan">确认退款</view>
+    </view>
+    <image class="close" src="/images/close.png" bindtap="close_refund"></image>
+  </view>
+  <view class="layer" wx:if="{{showLayer}}" bindtap="close_layer" />
+</view>
+
+<view>
+  <navigator url="/pages/all_ranking/all_ranking">
+     全服排行榜
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/cgd/cgd">
+     场馆端
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/cgd_jiesuan/cgd_jiesuan">
+     场馆端结算
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/cgd_quanxian/cgd_quanxian">
+     场馆端权限
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/cgd_yuekelv/cgd_yuekelv">
+     场馆端约课率(教练约课率)
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/chat/chat">
+     聊天
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/coach_ranking/coach_ranking">
+     教练排名
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/coach_wall/coach_wall">
+     教练墙
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/course_wall/course_wall">
+     课程墙
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/dabiao_and_ticheng/dabiao_and_ticheng">
+     达标和提成
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/gym/gym">
+     场馆
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/index/index">
+     首页
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/jiaolianduan/jiaolianduan">
+     教练端
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/jiaolianduan_add_anli/jiaolianduan_add_anli">
+     教练端添加案例
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/jiaolianduan_anli/jiaolianduan_anli">
+     教练端案例
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/jiaolianduan_jiesuan/jiaolianduan_jiesuan">
+     教练端结算
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/jiaolianduan_zhengshu/jiaolianduan_zhengshu">
+     教练端证书
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/logs/logs">
+     查看启动日志
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/msg/msg">
+     消息
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/my/my">
+     个人中心
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/order_cgb/order_cgb">
+     订购场馆包
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/order_kcb/order_kcb">
+     订购课程包
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/order_xuanwei/order_xuanwei">
+     选位
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/order_yuyue/order_yuyue">
+     课程预约
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/vip_rights/vip_rights">
+     vip特权
+  </navigator>
+</view>
+<view>
+  <navigator url="/pages/zhandui/zhandui">
+     战队
+  </navigator>
+</view>
+
+  <navigator url="/pages/my_jiaolian/my_jiaolian">
+     <view>我的教练</view>
+  </navigator>
+
+<view>
+  <navigator url="/pages/jiaolianduan_chawei/jiaolianduan_chawei">
+     教练端查位
+  </navigator>
+</view>
+
+<view>
+  <navigator url="/pages/addnew/addnew">
+     教练端添加新课程
+  </navigator>
+</view>
+
+<view>
+  <navigator url="/pages/Appointment_details/Appointment_details">
+     预约详情
+  </navigator>
+</view>
+
+<view>
+  <navigator url="/pages/aaa/aaa">
+     啊啊啊
+  </navigator>
+</view>
+<view>
+<navigator url="/pages/mesgjiaolian/msgjiaolian">
+111111
+</navigator>
+</view>
+
+<view>
+  <navigator url="/pages/work_out/work_out">
+     paike
+  </navigator>
+</view>
+
+<view>
+  <navigator url="/pages/gerenpaiming/gerenpaiming">
+     个人排名
+  </navigator>
+</view>
+
+<view>
+  <navigator url="/pages/shiyan/shiyan">
+     实验
+  </navigator>
+</view>

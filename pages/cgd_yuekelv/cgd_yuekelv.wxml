@@ -1,0 +1,48 @@
+<!--pages/cgd_yuekelv/cgd_yuekelv.wxml-->
+<view class="container">
+  <view class="choose">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        {{array[index]}}
+      </view>
+      <image class="icon" src="/images/sjx.png"></image>
+    </picker>
+    <picker mode="date" fields="month" value="{{date}}" start="2015-09" end="2080-09" bindchange="bindDateChange">
+      <view class="picker">
+        {{date}}
+      </view>
+      <image class="icon" src="/images/sjx.png"></image>
+    </picker>
+  </view>
+  <view class="table">
+    <view class="table_tr">
+      <view class="th">姓名</view>
+      <view class="th">状态</view>
+      <view class="th">团操</view>
+      <view class="th">训练营</view>
+      <view class="th">私教</view>
+    </view>
+    <view class="table_tr">
+      <view class="td">大灰杨</view>
+      <view class="td">在职</view>
+      <view class="td">35%</view>
+      <view class="td">35%</view>
+      <view class="td">35课时</view>
+    </view>
+    <view class="table_tr">
+      <view class="td">大灰杨</view>
+      <view class="td">在职</view>
+      <view class="td">35%</view>
+      <view class="td">35%</view>
+      <view class="td">35课时</view>
+    </view>
+        <view class="table_tr">
+      <view class="td">大灰杨</view>
+      <view class="td quit">离职</view>
+      <view class="td">35%</view>
+      <view class="td">35%</view>
+      <view class="td">35课时</view>
+    </view>
+
+  </view>
+</view>

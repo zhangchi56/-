@@ -1,0 +1,19 @@
+<!--pages/chat/chat.wxml-->
+<view class="container">
+  <view class="content">
+    <view class="chat">
+      <view class="chat-item chat-left">
+        <image class="headimg" src="/images/headimg.png"></image>
+        <view class="chat-content">昨天去做什么了？昨天去做什么了？昨天去做什么了？昨天去做什么了？昨天去做什么了？</view>
+      </view>
+      <view class="chat-item chat-right">
+        <view class="chat-content">昨天去做什么了？</view>
+        <image class="headimg" src="/images/headimg.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="write">
+    <input class="write_inp"></input>
+    <image class="send" src="/images/send.png"></image>
+  </view>
+</view>

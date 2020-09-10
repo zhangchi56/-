@@ -1,0 +1,91 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/kebiao/kebiao",
+    "pages/my/my",
+    "pages/gym/gym",
+    "pages/coach_ranking/coach_ranking",
+    "pages/all_ranking/all_ranking",
+    "pages/zhandui/zhandui",
+    "pages/coach_wall/coach_wall",
+    "pages/chat/chat",
+    "pages/vip_rights/vip_rights",
+    "pages/order_kcb/order_kcb",
+    "pages/order_yuyue/order_yuyue",
+    "pages/order_cgb/order_cgb",
+    "pages/order_xuanwei/order_xuanwei",
+    "pages/course_wall/course_wall",
+    "pages/jiaolianduan/jiaolianduan",
+    "pages/jiaolianduan_jiesuan/jiaolianduan_jiesuan",
+    "pages/dabiao_and_ticheng/dabiao_and_ticheng",
+    "pages/cgd_jiesuan/cgd_jiesuan",
+    "pages/cgd/cgd",
+    "pages/cgd_yuekelv/cgd_yuekelv",
+    "pages/cgd_quanxian/cgd_quanxian",
+    "pages/jiaolianduan_zhengshu/jiaolianduan_zhengshu",
+    "pages/jiaolianduan_anli/jiaolianduan_anli",
+    "pages/jiaolianduan_add_anli/jiaolianduan_add_anli",
+    "pages/msg/msg",
+    "pages/jiaolianduan_chawei/jiaolianduan_chawei",
+    "pages/my_jiaolian/my_jiaolian",
+    "pages/makeanappointment/makeanappointment",
+    "pages/addnew/addnew",
+    "pages/Appointment_details/Appointment_details",
+    "pages/cgd_addnew/cgd_addnew",
+    "pages/aaa/aaa",
+    "pages/mesgjiaolian/msgjiaolian",
+    "pages/work_out/work_out",
+    "pages/gerenpaiming/gerenpaiming",
+    "pages/shiyan/shiyan"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#232323",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#00A9DE",
+    "selectedColor": "#fff",
+    "backgroundColor": "#3B3B3B",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/index.png",
+        "iconPath": "images/index_1.png",
+        "pagePath": "pages/index/index",
+        "text": "约课"
+      },
+      {
+        "selectedIconPath": "images/kebiao.png",
+        "iconPath": "images/kebiao_1.png",
+        "pagePath": "pages/kebiao/kebiao",
+        "text": "课表"
+      },
+      {
+        "selectedIconPath": "images/zhandui.png",
+        "iconPath": "images/zhandui_1.png",
+        "pagePath": "pages/zhandui/zhandui",
+        "text": "战队"
+      },
+      {
+        "selectedIconPath": "images/my.png",
+        "iconPath": "images/my_1.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "location"
+  ]
+}
+

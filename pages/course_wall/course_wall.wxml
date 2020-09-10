@@ -1,0 +1,114 @@
+<!--pages/course_wall/course_wall.wxml-->
+
+<view class="container">
+  <view class="carousel">
+    <swiper indicator-dots="true" autoplay="true" interval="5000" duration="500" circular="true" style='height:300rpx;'>
+      <block>
+        <swiper-item>
+          <image src="/images/banner1.png" class="slide-image" mode='aspectFill' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="head">
+    <view class="head_title">团操/训练营</view>
+    <view class="head_subTitle">格莱美舞蹈</view>
+  </view>
+  <view class="section">
+    <view class="section_li">
+      <view class="title">
+        <image src="/images/icon1.png"></image>
+        <view>格莱美舞蹈</view>
+      </view>
+      <view class="ct {{showMore1?'':'ellipsis-2'}}">
+        舞蹈融合了多种流行舞蹈风格的健身课程。燃烧大量科鲁利在激情的舞蹈中释放自我。的舞蹈中释放自我的舞蹈中释放自我的舞蹈中
+      </view>
+      <image class="more {{showMore1?'fold':''}}" src="/images/zk.png" bindtap="show_more1"></image>
+    </view>
+    <view class="section_li">
+      <view class="title">
+        <image src="/images/icon2.png"></image>
+        <view>训练效果</view>
+      </view>
+      <view class="ct {{showMore2?'':'ellipsis-2'}}">
+        舞蹈融合了多种流行舞蹈风格的健身课程。燃烧大量科鲁利在激情的舞蹈中释放自我。的舞蹈中释放自我的舞蹈中释放自我的舞蹈中
+      </view>
+      <image class="more {{showMore2?'fold':''}}" src="/images/zk.png" bindtap="show_more2"></image>
+    </view>
+    <view class="section_li">
+      <view class="title">
+        <image src="/images/icon3.png"></image>
+        <view>训练效果</view>
+      </view>
+      <view class="ct {{showMore3?'':'ellipsis-2'}}">
+        舞蹈融合了多种流行舞蹈风格的健身课程。燃烧大量科鲁利在激情的舞蹈中释放自我。的舞蹈中释放自我的舞蹈中释放自我的舞蹈中
+      </view>
+      <image class="more {{showMore3?'fold':''}}" src="/images/zk.png" bindtap="show_more3"></image>
+    </view>
+    <view class="section_li">
+      <view class="title">
+        <image src="/images/icon4.png"></image>
+        <view>训练效果</view>
+      </view>
+      <view class="score">
+        <view class="score_li">战分+30</view>
+        <view class="score_li">卡路币+30</view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section_head">
+      <view class="left">
+        <image class="headimg" src="/images/headimg.png"></image>
+        <view class="name">tony zhang</view>
+      </view>
+      <view class="kcb">课程包</view>
+    </view>
+    <view class="section_li">
+      <view class="title intr">
+        <image src="/images/yuan.png"></image>
+        <view>简介</view>
+      </view>
+      <view class="ct {{showMore4?'':'ellipsis-2'}}">
+        美莱认证教练，这些都是教练的个人介绍，美莱认证教练，这些都是教练的个人介绍
+      </view>
+      <image class="more {{showMore4?'fold':''}}" src="/images/zk.png" bindtap="show_more4"></image>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section_li">
+      <view class="title">
+        <image src="/images/icon5.png"></image>
+        <view>合肥金克斯健身房</view>
+      </view>
+    </view>
+    <view class="section_li">
+      <view class="title">
+        <image src="/images/icon6.png"></image>
+        <view>上课时间：21：00-12：00</view>
+      </view>
+    </view>
+    <view class="section_li">
+      <view class="title">
+        <image src="/images/icon7.png"></image>
+        <view>上课教室：三楼123舞蹈室</view>
+      </view>
+    </view>
+    <view class="section_li">
+      <view class="title">
+        <image src="/images/icon8.png"></image>
+        <view>价格：路人价¥99 | 战卡价¥99</view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section_li">
+      <view class="title">
+        <image src="/images/icon9.png"></image>
+        <view>说明</view>
+      </view>
+      <view class="ct">课前24小时以上 3元 课前12小时以上 2元 课前6小时以上 1元 课前6小时内 0元</view>
+    </view>
+  </view>
+  <view class="yuyueBtn">立即约课</view>
+</view>

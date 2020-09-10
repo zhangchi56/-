@@ -1,0 +1,103 @@
+<view class="container">
+  <view class="header">
+    <image class="header_bj" src="/images/phbj.png"></image>
+    <view class="header_ct" style="top:{{statusBarHeight}}px">
+      <image class="headline" src="/images/headline.png"></image>
+      <view class="team">
+        <view class="label">我的战区</view>
+        <view class="label">{{region[0]}}-{{region[1]}}-{{region[2]}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="content" style="top:{{statusBarHeight+130}}px">
+    <view class="type">
+      <view class="type_li {{select=='total'?'type_active':''}}" data-select="total" bindtap="select">总分榜</view>
+      <view class="type_li {{select=='week'?'type_active':''}}" data-select="week" bindtap="select">本周榜</view>
+    </view>
+    <!-- <view class="area">
+      <picker class="area_p" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          {{region[0]}}
+        </view>
+        <image class="more" src="/images/zk.png"></image>
+      </picker>
+      <picker bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          {{region[1]}}
+        </view>
+        <image class="more" src="/images/zk.png"></image>
+      </picker>
+      <picker bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          {{region[2]}}
+        </view>
+        <image class="more" src="/images/zk.png"></image>
+      </picker>
+    </view> -->
+  <view class="section area">
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    
+    <view class="picker">{{region[0]}}</view><image class="more" src="/images/zk.png"></image>
+  </picker>
+  <picker mode="region" bindchange="bindRegionChange">
+        <view class="picker">
+          {{region[1]}}
+        </view><image class="more" src="/images/zk.png"></image>
+      </picker>
+
+  <picker mode="region" bindchange="bindRegionChange">
+        <view class="picker">
+          {{region[2]}}
+        </view><image class="more" src="/images/zk.png"></image>
+      </picker>
+</view>
+
+    <view class="list">
+      <view class="list_li">
+        <view class="left">
+          <view class="rank">
+            <image src="/images/jp.png"></image>
+          </view>
+          <view class="level">黄金</view>
+          <view class="name">没得感情的昵称</view>
+          <image class="gender" src="/images/nan.png"></image>
+        </view>
+        <view class="score">战分 330</view>
+      </view>
+      <view class="list_li">
+        <view class="left">
+          <view class="rank">
+            <image src="/images/yp.png"></image>
+          </view>
+          <view class="level">黄金</view>
+          <view class="name">没得感情的昵称</view>
+          <image class="gender" src="/images/nv.png"></image>
+        </view>
+        <view class="score">战分 330</view>
+      </view>
+      <view class="list_li">
+        <view class="left">
+          <view class="rank">
+            <image src="/images/jp.png"></image>
+          </view>
+          <view class="level">黄金</view>
+          <view class="name">没得感情的昵称</view>
+          <image class="gender" src="/images/nv.png"></image>
+        </view>
+        <view class="score">战分 330</view>
+      </view>
+      <view class="list_li">
+        <view class="left">
+          <view class="rank">
+            <image src="/images/pm.png"></image>
+            <view class="txt">4</view>
+          </view>
+          <view class="level">黄金</view>
+          <view class="name">没得感情的昵称</view>
+          <image class="gender" src="/images/nv.png"></image>
+        </view>
+        <view class="score">战分 330</view>
+      </view>
+    </view>
+  </view>
+</view>

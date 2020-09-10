@@ -1,0 +1,36 @@
+<!--pages/jiaolianduan_anli/jiaolianduan_anli.wxml-->
+<view class="container">
+  <view class="list">
+    <view class="list_li">
+      <image src="/images/al.png"></image>
+      <view class="txt">
+        <view class="txt_title">全民健身开始啦!</view>
+        <view class="txt_ct ellipsis-2">了解更多关于健身俱乐部的故了解更多解更多</view>
+      </view>
+    </view>
+    <view class="list_li">
+      <image src="/images/al.png"></image>
+      <view class="txt">
+        <view class="txt_title">全民健身开始啦!</view>
+        <view class="txt_ct ellipsis-2">了解更多关于健身俱乐部的故了解更多解更多</view>
+      </view>
+    </view>
+    <view class="list_li">
+      <image src="/images/al.png"></image>
+      <view class="txt">
+        <view class="txt_title">全民健身开始啦!</view>
+        <view class="txt_ct ellipsis-2">了解更多关于健身俱乐部的故了解更多解更多</view>
+      </view>
+    </view>
+    <view class="list_li">
+      <image src="/images/al.png"></image>
+      <view class="txt">
+        <view class="txt_title">全民健身开始啦!</view>
+        <view class="txt_ct ellipsis-2">了解更多关于健身俱乐部的故了解更多解更多</view>
+      </view>
+    </view>
+  </view>
+  <view class="btn"><navigator url="/pages/jiaolianduan_add_anli/jiaolianduan_add_anli">
+     新增案例
+  </navigator></view>
+</view>

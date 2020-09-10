@@ -1,0 +1,111 @@
+<!--pages/dabiao_and_ticheng/dabiao_and_ticheng.wxml-->
+<view class="container">
+  <view class="head">
+    <view class="title">团操</view>
+    <picker mode="date" fields="month" value="{{date}}" start="2015-09" end="2080-09" bindchange="bindDateChange">
+      <view class="picker">
+        {{date}}
+      </view>
+      <image class="icon" src="/images/sjx.png"></image>
+    </picker>
+  </view>
+  <view class="table">
+    <view class="table_tr">
+      <view class="th">我的约课率</view>
+      <view class="th">达标要求</view>
+      <view class="th">
+        <view class="label">普通</view>
+        <view class="percentage">（≥30%）</view>
+      </view>
+      <view class="th yellow">
+        <view class="label">人气</view>
+        <view class="percentage">（≥30%）</view>
+      </view>
+      <view class="th">
+        <view class="label">大咖</view>
+        <view class="percentage">（≥30%）</view>
+      </view>
+    </view>
+    <view class="table_tr">
+      <view class="td">23%</view>
+      <view class="td">提成比例</view>
+      <view class="td">30%</view>
+      <view class="td yellow">40%</view>
+      <view class="td">50%</view>
+    </view>
+  </view>
+  <view class="head">
+    <view class="title">训练营</view>
+    <picker mode="date" fields="month" value="{{date}}" start="2015-09" end="2080-09" bindchange="bindDateChange">
+      <view class="picker">
+        {{date}}
+      </view>
+      <image class="icon" src="/images/sjx.png"></image>
+    </picker>
+  </view>
+  <view class="table">
+    <view class="table_tr">
+      <view class="th">我的约课率</view>
+      <view class="th">达标要求</view>
+      <view class="th yellow">
+        <view class="label">普通</view>
+        <view class="percentage">（≥30%）</view>
+      </view>
+      <view class="th">
+        <view class="label">人气</view>
+        <view class="percentage">（≥30%）</view>
+      </view>
+      <view class="th">
+        <view class="label">大咖</view>
+        <view class="percentage">（≥30%）</view>
+      </view>
+    </view>
+    <view class="table_tr">
+      <view class="td">23%</view>
+      <view class="td">提成比例</view>
+      <view class="td yellow">30%</view>
+      <view class="td">40%</view>
+      <view class="td">50%</view>
+    </view>
+  </view>
+  <view class="head">
+    <view class="title">私教</view>
+    <picker mode="date" fields="month" value="{{date}}" start="2015-09" end="2080-09" bindchange="bindDateChange">
+      <view class="picker">
+        {{date}}
+      </view>
+      <image class="icon" src="/images/sjx.png"></image>
+    </picker>
+  </view>
+  <view class="table">
+    <view class="table_tr">
+      <view class="th">我的约课量</view>
+      <view class="th">达标要求</view>
+      <view class="th">
+        普通
+      </view>
+      <view class="th yellow">
+        人气
+      </view>
+      <view class="th">
+        大咖
+      </view>
+    </view>
+    <view class="table_tr">
+      <view class="td">23</view>
+      <view class="td">提成比例</view>
+      <view class="td">30</view>
+      <view class="td yellow">40</view>
+      <view class="td">50</view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section_li">
+      <view class="title">
+        <image src="/images/icon9.png"></image>
+        <view>说明</view>
+      </view>
+      <view class="ct">如低于“普通”达标要求，则提成比例为20%</view>
+    </view>
+  </view>
+</view>

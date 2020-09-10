@@ -1,0 +1,270 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="header" style="padding-top:{{statusBarHeight}}px">
+		<view class="city" bindtap="selectCity">
+			<view>{{city-now}}</view>
+			<image class="{{showCity?'selectActive':''}}" src="/images/xz.png"></image>
+		</view>
+		<view class="title">健身约课</view>
+	</view>
+	<view class="empty_custom" style="padding-top:{{statusBarHeight}}px"></view>
+
+	<view class="layer_ct layer_area" style="top:{{statusBarHeight+44}}px" wx:if="{{showCity}}">
+		<view class="select">
+			<view class="left">当前选择</view>
+			<view class="right">{{city-now}}</view>
+		</view>
+		<view class="select">
+			<view class="left">定位城市</view>
+			<view class="right">{{add}}</view>
+		</view>
+		<view class="city">
+			<view class="label">全部城市</view>
+			<view class="list">
+				<view class="list_li" wx:for="" wx:key="position">{{citys}}</view>
+
+			</view>
+		</view>
+	</view>
+
+	<view class="carousel">
+		<swiper indicator-dots="true" autoplay="true" interval="5000" duration="500" circular="true" style='height:300rpx;'>
+			<block>
+				<swiper-item>
+					<image src="/images/banner1.png" class="slide-image" mode='aspectFill' />>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+	<view class="section">
+		<view class="section_row1">
+			<view class="nav">
+				<view class="nav_tab {{index==id?'active':''}}" wx:for="{{nav}}" wx:key="index" data-index="{{index}}" bindtap="selectTab" data-type="{{item}}">
+					{{item}}
+				</view>
+			</view>
+			<!-- <view class="filter" bindtap="handle_filter">筛选</view> -->
+		</view>
+		<view class="calendar" wx:if="{{id==0 || id==2}}">
+			<view class="calendar_li calendar_active" wx:for="{{date}}" wx:key="index">
+				<view class="date">{{item.monthday}}</view>
+				<view class="week" data-time="{{item.time}}" bindtap="getTime">{{item.weekday}}</view>
+			</view>
+			<view class="filter" bindtap="handle_filter">筛选</view>
+		</view>
+	</view>
+	<view class="list" wx:if="{{id==0}}">
+		<view class="gym" wx:for="{{courseList}}" wx:key="index">
+			<view class="gym_head">
+				<view class="shop">{{item.gym}}</view>
+				<view class="place" bindtap="seeMap">查看地图</view>
+			</view>
+			<view class="li" bindtap="hanldCourse">
+				<view class="li_left">
+					<image src="/images/headimg.png" bindtap="hanldCoach"></image>
+					<view>
+						<view class="name">{{item.coach_name}}</view>
+						<view class="t1">{{item.starttime}}-{{item.endtime}}/{{item.classroom_id}}</view>
+						<view class="rank">
+							<view class="rank_r">路人价
+								<text class="price">69</text>
+							</view>|
+							<view class="rank_h">战卡价
+								<text class="price">69</text>
+							</view>
+						</view>
+					</view>
+				</view>
+				<view class="li_right">
+					<view class="btn btn1">
+						<navigator url="../order_yuyue/order_yuyue">预 约</navigator>
+					</view>
+					<view class="btn btn2">
+						<navigator url="../order_kcb/order_kcb">课程包</navigator>
+					</view>
+				</view>
+			</view>
+			<view class="li">
+				<view class="li_left">
+					<image src="/images/headimg.png"></image>
+					<view>
+						<view class="name">燃脂普拉提</view>
+						<view class="t1">08:40-12:00 / 室外</view>
+						<view class="rank">
+							<view class="rank_r">路人价
+								<text class="price">¥69</text>
+							</view>|
+							<view class="rank_h">战卡价
+								<text class="price">¥69</text>
+							</view>
+						</view>
+					</view>
+				</view>
+				<view class="li_right">
+					<view class="btn btn1">预 约</view>
+					<view class="btn btn2">课程包</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="list" wx:if="{{id==1}}">
+		<view class="gym">
+
+			<view class="gym_head">
+				<!-- <view class="shop">合肥金克斯</view> -->
+				<view class="place" bindtap="seeMap">查看地图</view>
+			</view>
+			<view class="li" bindtap="hanldCoach" wx:for="{{goodsList}}" wx:key="coach_id">
+				<view class="li_left">
+					<image src="/images/headimg.png"></image>
+					<view>
+						<view class="name">{{item.coach_name}}</view>
+						<view class="t2">擅长：{{item.effect}}、{{item.introduction}}</view>
+						<view class="cost">¥{{item.price}}起/课时</view>
+					</view>
+				</view>
+				<view class="li_right">
+					<view class="btn btn1" bindtap="hanldMake">预 约</view>
+					<view class="btn btn2" bindtap="hanldCoach">查 看</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="list" wx:if="{{id==2}}">
+		<view class="gym">
+			<view class="gym_head">
+				<view class="shop">合肥金克斯</view>
+				<view class="place" bindtap="seeMap">查看地图</view>
+			</view>
+			<view class="li">
+				<view class="li_left">
+					<image src="/images/headimg.png"></image>
+					<view>
+						<view class="name">燃脂普拉提</view>
+						<view class="t1">08:40-12:00 / 室外 / 33节</view>
+						<view class="rank">
+							<view class="rank_r">路人价
+								<text class="price">¥69</text>
+							</view>|
+							<view class="rank_h">战卡价
+								<text class="price">¥69</text>
+							</view>
+						</view>
+					</view>
+				</view>
+				<view class="li_right">
+					<view class="btn btn1" bindtap="hanldMake">预 约</view>
+					<navigator url="/pages/gym/gym">
+						<view class="btn btn2">购 买</view>
+					</navigator>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="list" wx:if="{{id==3}}">
+		<view class="gym">
+			<view class="gym_head">
+				<view class="shop">合肥金克斯</view>
+				<view class="place" bindtap="seeMap">查看地图</view>
+			</view>
+			<view class="li">
+				<view class="li_left">
+					<view class="name">自定义场馆包名称</view>
+				</view>
+				<view class="li_center">33次</view>
+				<view class="li_right">
+					<navigator url="/pages/gym/gym">
+						<view class="btn btn2">购 买</view>
+					</navigator>
+				</view>
+			</view>
+			<view class="li">
+				<view class="li_left">
+					<view class="name">自定义场馆包名称</view>
+				</view>
+				<view class="li_center">1周</view>
+				<view class="li_right">
+					<navigator url="/pages/gym/gym">
+						<view class="btn btn2">购 买</view>
+					</navigator>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="layer_ct" wx:if="{{showFilter}}">
+		<view class="head">
+			<view class="title">
+				<view class="title_li {{titleID==index?'title_active':''}}" wx:for="{{titles}}" wx:key="index" data-index="{{index}}" bindtap="selectTitle">{{item}}</view>
+			</view>
+			<view class="right">
+				<view class="clear">清空</view>
+				<view class="confirm" bindtap="handle_confirm">确定</view>
+			</view>
+		</view>
+		<!-- 场馆选择显示内容开始 -->
+		<view class="content cg" wx:if="{{titleID==0}}">
+			<view class="content_wrap left">
+				<view class="box">
+					<view class="box_title">地区</view>
+					<view class="box_list">
+						<view bindtap="selectBtn" data-index="{{index}}" data-type="venueDistrict" class="box_list_li {{item.isActive?'activeLi':''}}" wx:for="{{venueDistrict}}" wx:key="index">{{item.name}}</view>
+					</view>
+				</view>
+			</view>
+			<view class="content_wrap right">
+				<view class="box">
+					<view class="box_title">门店(可多选)</view>
+					<view class="box_list">
+          <view data-index="{{index}}" class="box_list_li {{venueStoresAllSure?'activeLi':''}}">全部</view>
+            <view bindtap="multipleSelectBtn" data-index="{{index}}" class="box_list_li {{item.isActive?'activeLi':''}}" wx:for="{{venueStores}}" wx:key="index">{{item.name}}</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<!-- 场馆选择显示内容结束 -->
+
+		<!-- 课程选择显示内容开始 -->
+		<view class="content kc" wx:if="{{titleID==1}}">
+			<view class="content_wrap left">
+				<view class="box">
+					<view class="box_title">目标</view>
+					<view class="box_list">
+            <view bindtap="selectBtn" data-index="{{index}}" data-type="courseObjectives" class="box_list_li {{item.isActive?'activeLi':''}}" wx:for="{{courseObjectives}}" wx:key="index">{{item.name}}</view>
+					</view>
+				</view>
+				<view class="box">
+					<view class="box_title">类型</view>
+					<view class="box_list">
+						<view bindtap="selectBtn" data-index="{{index}}" data-type="courseType" class="box_list_li {{item.isActive?'activeLi':''}}" wx:for="{{courseType}}" wx:key="index">{{item.name}}</view>
+					</view>
+				</view>
+			</view>
+			<view class="content_wrap right">
+				<view class="box">
+					<view class="box_title">选择课程(可多选)</view>
+					<view class="box_list">
+						<view class="box_list_li activeLi">全部</view>
+						<view class="box_list_li">女神营</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<!-- 课程选择显示内容结束 -->
+
+		<!-- 时段选择显示内容开始 -->
+		<view class="content" wx:if="{{titleID==2}}">
+			<view class="time">
+				<view bindtap="selectBtn" data-index="{{index}}" data-type="timeLine" class="time_li {{item.isActive?'activeTime':''}}" wx:for="{{timeLine}}" wx:key="index">{{item.name}}</view>
+			</view>
+		</view>
+		<!-- 时段选择显示内容结束 -->
+	</view>
+	<!-- <view class="box">
+    <view class="box_title">城市</view>
+    <view class="box_list">
+      <view class="box_list_li {{cityID==index?'activeLi':''}}" wx:for="{{citys}}" wx:key="" data-index="{{index}}" bindtap="selectCity">{{item}}</view>
+    </view>
+  </view> -->
+	<view class="layer" wx:if="{{showFilter}}" bindtap="close_layer" />
+</view>

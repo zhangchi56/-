@@ -1,0 +1,67 @@
+/* pages/order_cgb/order_cgb.wxss */
+.container{
+  padding-bottom: 120rpx;
+}
+.list_head{
+  padding: 25rpx 0 25rpx 60rpx;
+  border-top:2rpx solid rgba(112,112,112,1);
+  background: rgba(59, 59, 59, 1);
+}
+.list_head .name{
+  font-size:44rpx;
+color:rgba(239,204,89,1);
+margin-bottom: 14rpx;
+}
+.list_head .address{
+  font-size:24rpx;
+color:rgba(7,173,236,1);
+}
+.list_li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+   padding: 25rpx 30rpx 25rpx;
+   color:#fff;
+   font-size: 24rpx;
+   border-top:2rpx solid rgba(112,112,112,1);
+  background: rgba(59, 59, 59, 1);
+}
+.list_li:nth-child(2){
+   border-bottom:2rpx solid rgba(112,112,112,1);
+   margin-bottom: 48rpx;
+}
+.list_li:last-child{
+   border-bottom:2rpx solid rgba(112,112,112,1);
+}
+.list_li .left{
+  display: flex;
+  align-items: center;
+}
+.list_li .left image{
+  width: 14rpx;
+  height: 14rpx;
+  margin-right: 10rpx;
+}
+.list_li .left .price{
+ font-size: 32rpx;
+ color:rgba(220, 50, 74, 1);
+}
+.list_li .noCoupon{
+  color:rgba(255,255,255,0.5);
+}
+.commit{
+  width:608rpx;
+height:100rpx;
+line-height: 100rpx;
+background:rgba(239,204,89,1);
+box-shadow:0px -4rpx 8rpx rgba(0,0,0,0.16);
+opacity:1;
+border-radius:20rpx;
+margin:88rpx auto 0;
+text-align: center;
+color:#fff;
+font-size: 32rpx;
+}
+.commit .price2{
+  color:rgba(220, 50, 74, 1);
+}

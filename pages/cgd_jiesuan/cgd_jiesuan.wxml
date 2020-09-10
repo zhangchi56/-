@@ -1,0 +1,138 @@
+<!--pages/cgd_jiesuan/cgd_jiesuan.wxml-->
+<view class="container">
+  <view class="head">
+    <view>银行账户</view>
+    <view class="changeBtn">修改</view>
+  </view>
+  <view class="table1">
+    <view class="table_tr">
+      <view class="th">银行</view>
+      <view class="th">分支行</view>
+      <view class="th">账号</view>
+      <view class="th">户名</view>
+    </view>
+    <view class="table_tr">
+      <view class="td">建设银行</view>
+      <view class="td">建设银行分支行</view>
+      <view class="td">尾号1235</view>
+      <view class="td">张大仙</view>
+    </view>
+  </view>
+  <view class="head2">
+    <view></view>
+    <picker mode="date" fields="month" value="{{date}}" start="2015-09" end="2080-09" bindchange="bindDateChange">
+      <view class="picker">
+        {{date}}
+      </view>
+      <image class="icon" src="/images/sjx.png"></image>
+    </picker>
+  </view>
+  <view class="table1">
+    <view class="table_tr">
+      <view class="th"></view>
+      <view class="th">团操</view>
+      <view class="th">训练营</view>
+      <view class="th">私教</view>
+    </view>
+    <view class="table_tr">
+      <view class="td" style="color:rgba(220, 50, 74, 1);">本月比例</view>
+      <view class="td">23%</view>
+      <view class="td">23%</view>
+      <view class="td">23%</view>
+    </view>
+  </view>
+  <view class="head2">
+    <view></view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        {{array[index]}}
+      </view>
+      <image class="icon" src="/images/sjx.png"></image>
+    </picker>
+  </view>
+  <view class="table2">
+    <view class="table_tr">
+      <view class="th">日期</view>
+      <view class="th">课程名</view>
+      <view class="th">人数</view>
+      <view class="th">实际营收</view>
+      <view class="th">提成金额</view>
+    </view>
+    <view class="table_tr">
+      <view class="td">9月23日</view>
+      <view class="td">课程名称</view>
+      <view class="td">23</view>
+      <view class="td">123</view>
+      <view class="td">+123</view>
+    </view>
+    <view class="table_tr">
+      <view class="td">9月23日</view>
+      <view class="td">课程名称</view>
+      <view class="td">23</view>
+      <view class="td">123</view>
+      <view class="td">+123</view>
+    </view>
+  </view>
+  <view class="head2">
+    <view></view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array2}}">
+      <view class="picker">
+        {{array2[index]}}
+      </view>
+      <image class="icon" src="/images/sjx.png"></image>
+    </picker>
+  </view>
+  <view class="table2">
+    <view class="table_tr">
+      <view class="th">日期</view>
+      <view class="th">课程名</view>
+      <view class="th">人数</view>
+      <view class="th">实际营收</view>
+      <view class="th">提成金额</view>
+    </view>
+    <view class="table_tr">
+      <view class="td">9月23日</view>
+      <view class="td">课程名称</view>
+      <view class="td">23</view>
+      <view class="td">123</view>
+      <view class="td">+123</view>
+    </view>
+    <view class="table_tr">
+      <view class="td">9月23日</view>
+      <view class="td">课程名称</view>
+      <view class="td">23</view>
+      <view class="td">123</view>
+      <view class="td">+123</view>
+    </view>
+  </view>
+  <view class="head2" style="margin-top:0;">
+    <view></view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array3}}">
+      <view class="picker">
+        {{array3[index]}}
+      </view>
+      <image class="icon" src="/images/sjx.png"></image>
+    </picker>
+  </view>
+  <view class="table2 table3">
+    <view class="table_tr">
+      <view class="th">日期</view>
+      <view class="th">项目</view>
+      <view class="th">金额</view>
+    </view>
+    <view class="table_tr">
+      <view class="td">9月23日</view>
+      <view class="td">项目</view>
+      <view class="td">-23</view>
+    </view>
+    <view class="table_tr">
+      <view class="td">9月23日</view>
+      <view class="td">项目</view>
+      <view class="td">-23</view>
+    </view>
+    <view class="table_tr">
+      <view class="total">合计：¥5000</view>
+    </view>
+  </view>
+  <view class="btn">请确认/暂未出账/已确认/已转账</view>
+</view>

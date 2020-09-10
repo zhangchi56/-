@@ -1,0 +1,321 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useIsolateContext": true,
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.9.4",
+	"appid": "wx1ab97fb1ddd22c40",
+	"projectname": "jianshen",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 11,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/gym/gym",
+					"pathName": "pages/gym/gym",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/kebiao/kebiao",
+					"pathName": "pages/kebiao/kebiao",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/kebiao/kebiao",
+					"pathName": "pages/kebiao/kebiao",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/coach_ranking/coach_ranking",
+					"pathName": "pages/coach_ranking/coach_ranking",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/all_ranking/all_ranking",
+					"pathName": "pages/all_ranking/all_ranking",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/coach_ranking/coach_ranking",
+					"pathName": "pages/coach_ranking/coach_ranking",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my_team/my_team",
+					"pathName": "pages/my_team/my_team",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/coach_wall/coach_wall",
+					"pathName": "pages/coach_wall/coach_wall",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/chat/chat",
+					"pathName": "pages/chat/chat",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/my",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/vip_rights/vip_rights",
+					"pathName": "pages/vip_rights/vip_rights",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order_kcb/order_kcb",
+					"pathName": "pages/order_kcb/order_kcb",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order_yuyue/order_yuyue",
+					"pathName": "pages/order_yuyue/order_yuyue",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/zhandui/zhandui",
+					"pathName": "pages/zhandui/zhandui",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order_cgb/order_cgb",
+					"pathName": "pages/order_cgb/order_cgb",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order_xuanwei/order_xuanwei",
+					"pathName": "pages/order_xuanwei/order_xuanwei",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/course_wall/course_wall",
+					"pathName": "pages/course_wall/course_wall",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/jiaolianduan/jiaolianduan",
+					"pathName": "pages/jiaolianduan/jiaolianduan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order_xuanwei/order_xuanwei",
+					"pathName": "pages/order_xuanwei/order_xuanwei",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/course_wall/course_wall",
+					"pathName": "pages/course_wall/course_wall",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/jiaolianduan/jiaolianduan",
+					"pathName": "pages/jiaolianduan/jiaolianduan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/jiaolianduan_jiesuan/jiaolianduan_jiesuan",
+					"pathName": "pages/jiaolianduan_jiesuan/jiaolianduan_jiesuan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/dabiao_and_ticheng/dabiao_and_ticheng",
+					"pathName": "pages/dabiao_and_ticheng/dabiao_and_ticheng",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cgd_jiesuan/cgd_jiesuan",
+					"pathName": "pages/cgd_jiesuan/cgd_jiesuan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cgd/cgd",
+					"pathName": "pages/cgd/cgd",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cgd_yuyuelv/cgd_yuyuelv",
+					"pathName": "pages/cgd_yuyuelv/cgd_yuyuelv",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cgd_yuekelv/cgd_yuekelv",
+					"pathName": "pages/cgd_yuekelv/cgd_yuekelv",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cgd_yuekelv/cgd_yuekelv",
+					"pathName": "pages/cgd_yuekelv/cgd_yuekelv",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cgd_quanxian/cgd_quanxian",
+					"pathName": "pages/cgd_quanxian/cgd_quanxian",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/jiaolianduan_zhengshu/jiaolianduan_zhengshu",
+					"pathName": "pages/jiaolianduan_zhengshu/jiaolianduan_zhengshu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/jiaolianduan_anli/jiaolianduan_anli",
+					"pathName": "pages/jiaolianduan_anli/jiaolianduan_anli",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/jiaolianduan_add_anli/jiaolianduan_add_anli",
+					"pathName": "pages/jiaolianduan_add_anli/jiaolianduan_add_anli",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/msg",
+					"pathName": "pages/msg",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/msg/msg",
+					"pathName": "pages/msg/msg",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/coach_wall/coach_wall",
+					"pathName": "pages/coach_wall/coach_wall",
+					"scene": null
+				}
+			]
+		}
+	}
+}

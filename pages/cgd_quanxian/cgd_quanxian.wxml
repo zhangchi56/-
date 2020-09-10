@@ -1,0 +1,32 @@
+<!--pages/cgd_quanxian/cgd_quanxian.wxml-->
+<view class="container">
+  <view class="choose">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        {{array[index]}}
+      </view>
+      <image class="icon" src="/images/sjx.png"></image>
+    </picker>
+    <view></view>
+  </view>
+  <view class="table">
+    <view class="table_tr">
+      <view class="th">姓名</view>
+      <view class="th">微信号</view>
+      <view class="th">状态</view>
+      <view class="th"></view>
+    </view>
+    <view class="table_tr">
+      <view class="td">大灰杨</view>
+      <view class="td">15856548895</view>
+      <view class="td">在职</view>
+      <view class="td">修改</view>
+    </view>
+    <view class="table_tr">
+      <view class="td">大灰杨</view>
+      <view class="td">15856548895</view>
+      <view class="td quit">离职</view>
+      <view class="td">修改</view>
+    </view>
+  </view>
+</view>

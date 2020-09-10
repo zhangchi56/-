@@ -1,0 +1,37 @@
+/* pages/shiyan/shiyan.wxss */
+.area{
+  display: flex;
+  justify-content: space-between;
+  padding: 12rpx 16rpx;
+  border-bottom:2rpx solid rgba(112,112,112,1);
+  color:#fff;
+  font-size: 20rpx;
+}
+
+.area picker{
+  position: relative;
+    padding-right: 10rpx;
+}
+
+.area picker .picker{
+  width: 150rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.area .area_p .picker{
+  width: 200rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+} 
+
+.area .more{
+  position: absolute;
+  top:50%;
+  margin-top: -6rpx;
+ width: 20rpx;
+ height: 12rpx;
+ right: 0;
+}

@@ -1,0 +1,366 @@
+<!--pages/coach_wall/coach_wall.wxml-->
+<!-- <official-account> </official-account> -->
+<view class="container">
+<view class="carousel">
+    <swiper indicator-dots="{{false}}" autoplay="true" interval="5000" duration="500" circular="true" style='height:600rpx;'>
+      <block>
+        <swiper-item>
+          <image src="/images/banner2.png" class="slide-image" mode='aspectFill' />
+        </swiper-item>
+        <swiper-item>
+          <image src="/images/banner2.png" class="slide-image" mode='aspectFill' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="select">
+    <view class="select_li {{select=='A'?'select_active':''}}" data-select="A" bindtap="select">教练信息</view>
+    <view class="select_li {{select=='B'?'select_active':''}}" data-select="B" bindtap="select">教练课程</view>
+  </view>
+  <view class="info" wx:if="{{select=='A'}}">
+    <view class="info_one">
+      <view class="head">
+        <image src="/images/headimg.png"></image>
+        <view>tony zhang</view>
+      </view>
+      <view class="row">
+        <view class="title">
+          <view class="icon"></view>
+          <view>简介</view>
+        </view>
+        <view class="intr {{moreIntr?'ellipsis-2':''}}">美莱认证教练，这些都是教练的个人介绍，美莱认证教练，这些都是教练的个人介绍美莱认证教练，这些都是教练的个人介绍美莱认证教练这些都是教练的个人介绍美莱认证教练这些都是教练的个人介绍美莱认证教练</view>
+        <view wx:if="{{moreIntr}}" class="more" bindtap="more_intr"></view>
+      </view>
+      <view class="row">
+        <view class="title">
+          <view class="icon"></view>
+          <view>擅长</view>
+        </view>
+        <view>美莱认证教练，这些都是教练的个人介绍，美莱认证教练，这些都是教练的个人介绍</view>
+      </view>
+      <view class="row">
+        <view class="title">
+          <view class="icon"></view>
+          <view>服务场馆</view>
+        </view>
+        <view>合肥金克斯健身俱乐部</view>
+      </view>
+    </view>
+    <view class="info_two info_li">
+      <view class="title">资格证书（5）</view>
+      <view class="wrap">
+        <view class="wrap_inner">
+          <image src="/images/zs1.png"></image>
+          <image src="/images/zs2.png"></image>
+          <image src="/images/zs1.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class="info_three info_li">
+      <view class="title">照片动态</view>
+      <view class="wrap">
+        <view class="wrap_inner">
+          <image src="/images/pic.png"></image>
+          <image src="/images/pic.png"></image>
+          <image src="/images/pic.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class="info_four info_li">
+      <view class="title">案例</view>
+      <view class="wrap">
+        <view class="wrap_inner">
+          <view class="wrap_inner_li">
+            <image src="/images/al.png"></image>
+            <view class="txt">
+              <view class="txt_title">全民健身开始啦!</view>
+              <view class="txt_ct ellipsis-2">了解更多关于健身俱乐部的故事了解更多关于健身俱乐部的故事了解更多关于健身俱乐部的故事</view>
+            </view>
+          </view>
+          <view class="wrap_inner_li">
+            <image src="/images/al.png"></image>
+            <view class="txt">
+              <view class="txt_title">全民健身开始啦!</view>
+              <view class="txt_ct ellipsis-2">了解更多关于健身俱乐部的故事了解更多关于健身俱乐部的故事了解更多关于健身俱乐部的故事</view>
+            </view>
+          </view>
+          <view class="wrap_inner_li">
+            <image src="/images/al.png"></image>
+            <view class="txt">
+              <view class="txt_title">全民健身开始啦!</view>
+              <view class="txt_ct ellipsis-2">了解更多关于健身俱乐部的故事了解更多关于健身俱乐部的故事了解更多关于健身俱乐部的故事</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="info_five info_li">
+      <view class="title">学员评价（200+）</view>
+      <view class="content">
+        <view class="list {{moreComment?'':'hid'}}">
+          <view class="list_li">
+            <view class="list_li_row1">教练的课程很有感染力优秀！</view>
+            <view class="list_li_row2">
+              <view>昨日清风今日依旧</view>
+              <view class="time">今天12：21</view>
+            </view>
+          </view>
+          <view class="list_li">
+            <view class="list_li_row1">教练的课程很有感染力优秀！</view>
+            <view class="list_li_row2">
+              <view>昨日清风今日依旧</view>
+              <view class="time">今天12：21</view>
+            </view>
+          </view>
+          <view class="list_li">
+            <view class="list_li_row1">教练的课程很有感染力优秀！</view>
+            <view class="list_li_row2">
+              <view>昨日清风今日依旧</view>
+              <view class="time">今天12：21</view>
+            </view>
+          </view>
+          <view class="list_li">
+            <view class="list_li_row1">教练的课程很有感染力优秀！</view>
+            <view class="list_li_row2">
+              <view>昨日清风今日依旧</view>
+              <view class="time">今天12：21</view>
+            </view>
+          </view>
+          <view class="list_li">
+            <view class="list_li_row1">教练的课程很有感染力优秀！</view>
+            <view class="list_li_row2">
+              <view>昨日清风今日依旧</view>
+              <view class="time">今天12：21</view>
+            </view>
+          </view>
+        </view>
+        <view class="more" bindtap="more_comment">{{tip}}>></view>
+      </view>
+    </view>
+  </view>
+  <view class="course" wx:if="{{select=='B'}}">
+    <view class="section">
+      <view class="section_row1">
+        <view class="nav">
+          <view class="nav_tab {{index==id?'active':''}}" wx:for="{{nav}}" wx:key='index' data-index="{{index}}" bindtap="selectTab">{{item}}</view>
+        </view>
+      </view>
+      <view class="calendar">
+        <view class="calendar_li calendar_active">
+          <view class="date">今天</view>
+          <view class="week">三</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.11</view>
+          <view class="week">四</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.12</view>
+          <view class="week">五</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.13</view>
+          <view class="week">六</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.14</view>
+          <view class="week">日</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.15</view>
+          <view class="week">一</view>
+        </view>
+        <view class="calendar_li">
+          <view class="date">12.16</view>
+          <view class="week">二</view>
+        </view>
+      </view>
+    </view>
+    <view class="list" wx:if="{{id==0}}">
+      <view class="gym">
+        <view class="gym_head">
+          <view class="shop">合肥金克斯</view>
+          <view class="place" bindtap="seeMap">查看地图</view>
+        </view>
+        <view class="li">
+          <view class="li_row1">
+            <view class="left">
+              <image src="/images/headimg.png"></image>
+              <view>
+                <view class="name">燃脂普拉提</view>
+                <view class="t2">08:40-12:00 / 室外</view>
+                <view class="cost">路人价
+                  <text>¥69</text> | 战卡
+                  <text>¥69</text>
+                </view>
+              </view>
+            </view>
+            <view class="btn btn1">预 约</view>
+          </view>
+          <view class="li_row2">
+            <view class="price">300元 / 3节</view>
+            <view class="btn btn2">购 买</view>
+          </view>
+          <view class="li_row2">
+            <view class="price">300元 / 3节</view>
+            <view class="btn btn2">购 买</view>
+          </view>
+        </view>
+        <view class="li">
+          <view class="li_row1">
+            <view class="left">
+              <image src="/images/headimg.png"></image>
+              <view>
+                <view class="name">燃脂普拉提</view>
+                <view class="t2">08:40-12:00 / 室外</view>
+                <view class="cost">路人价
+                  <text>¥69</text> | 战卡
+                  <text>¥69</text>
+                </view>
+              </view>
+            </view>
+            <view class="btn btn1">预 约</view>
+          </view>
+          <view class="li_row2">
+            <view class="price">300元 / 3节</view>
+            <view class="btn btn2">购 买</view>
+          </view>
+          <view class="li_row2">
+            <view class="price">300元 / 3节</view>
+            <view class="btn btn2">购 买</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="list" wx:if="{{id==1}}">
+      <view class="gym">
+        <view class="gym_head">
+          <view class="shop">合肥金克斯</view>
+          <view class="place" bindtap="seeMap">查看地图</view>
+        </view>
+        <view class="li tyk">
+          <view class="li_row1">
+            <view class="left">
+              <image src="/images/headimg.png"></image>
+              <view class="name">体验课</view>
+            </view>
+            <view class="btn btn1">预 约</view>
+          </view>
+        </view>
+        <view class="li">
+          <view class="li_row1">
+            <view class="left">
+              <image src="/images/headimg.png"></image>
+              <view>
+                <view class="name">燃脂普拉提</view>
+                <view class="t2">60分钟/节</view>
+              </view>
+            </view>
+            <view class="btn btn1">预 约</view>
+          </view>
+          <view class="li_row2">
+            <view class="price">300元 / 3节</view>
+            <view class="btn btn1">预 约</view>
+          </view>
+          <view class="li_row2">
+            <view class="price">300元 / 3节</view>
+            <view class="btn btn2">购 买</view>
+          </view>
+          <view class="li_row2">
+            <view class="price">300元 / 3节</view>
+            <view class="btn btn2">购 买</view>
+          </view>
+        </view>
+      </view>
+      <view class="free">
+        <view class="free_title">空闲时段</view>
+        <view class="free_ct">
+          <view class="free_ct_li">
+            <view class="time">0:00-0:30</view>
+            <view class="status status1">
+              <image src="/images/cha.png"></image>
+            </view>
+          </view>
+          <view class="free_ct_li">
+            <view class="time">0:00-0:30</view>
+            <view class="status status2">
+              <image src="/images/dui.png"></image>
+            </view>
+          </view>
+          <view class="free_ct_li">
+            <view class="time">0:00-0:30</view>
+            <view class="status status1">
+              <image src="/images/cha.png"></image>
+            </view>
+          </view>
+          <view class="free_ct_li">
+            <view class="time">0:00-0:30</view>
+            <view class="status status3">
+              被预约
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="list" wx:if="{{id==2}}">
+      <view class="gym">
+        <view class="gym_head">
+          <view class="shop">合肥金克斯</view>
+          <view class="place" bindtap="seeMap">查看地图</view>
+        </view>
+        <view class="li">
+          <view class="li_row1">
+            <view class="left">
+              <image src="/images/headimg.png"></image>
+              <view>
+                <view class="name">燃脂普拉提</view>
+                <view class="t2">08:40-12:00 / 室外</view>
+                <view class="cost">路人价
+                  <text>¥69</text> | 战卡
+                  <text>¥69</text>
+                </view>
+              </view>
+            </view>
+            <view class="btn btn1">预 约</view>
+          </view>
+          <view class="li_row2">
+            <view class="price">300元 / 3节</view>
+            <view class="btn btn2">购 买</view>
+          </view>
+          <view class="li_row2">
+            <view class="price">300元 / 3节</view>
+            <view class="btn btn2">购 买</view>
+          </view>
+        </view>
+        <view class="li">
+          <view class="li_row1">
+            <view class="left">
+              <image src="/images/headimg.png"></image>
+              <view>
+                <view class="name">燃脂普拉提</view>
+                <view class="t2">08:40-12:00 / 室外</view>
+                <view class="cost">路人价
+                  <text>¥69</text> | 战卡
+                  <text>¥69</text>
+                </view>
+              </view>
+            </view>
+            <view class="btn btn1">预 约</view>
+          </view>
+          <view class="li_row2">
+            <view class="price">300元 / 3节</view>
+            <view class="btn btn2">购 买</view>
+          </view>
+          <view class="li_row2">
+            <view class="price">300元 / 3节</view>
+            <view class="btn btn2">购 买</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="bottom_left">＋关注</view>
+    <view class="bottom_right" bindtap="toChat">聊天</view>
+  </view>
+</view>
